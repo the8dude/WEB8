@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulaires</title>
+</head>
+
+
+ 	<body>
+ 		
+ 		
+ 		<form method="get" action="http://bienvu.net/script.php">
+
+ 			<h2 align = "center"><b>Nous lançons une grande enquête sur les anciens stagiaires</b></h2>
+ 			<h4 align = "center" align="bottom"><b>merci de nous répondre</b></h4>
+
+ 			<fieldset>				
+				<legend>Vos coordonnées</legend>
+					<table>
+						<tr>
+							<td>votre nom</td>
+							<td><input type="text" name = "nom"/></td>
+						</tr>
+						<tr>
+							<td>votre prénom</td>
+							<td><input type="text" name = "prénom"/></td>
+						</tr>
+						<tr>
+							<td>votre date de naissance</td>
+							<td><input type="date" name = "ddn"/></td>
+						</tr>
+						<tr>
+							<td>votre adresse</td>
+							<td><input type="text" name = "adresse"/></td>
+						</tr>
+						<tr>
+							<td>votre ville</td>
+							<td><input type="text" name = "ville"/></td>
+						</tr>
+						<tr>
+							<td>votre code postal</td>
+							<td><input type="text" name = "code postal"/></td>
+						</tr>
+						<tr>
+							<td>votre email</td>
+							<td><input type="email" name = "email"/></td>
+						</tr>
+					</table>
+			</fieldset>
+			<br>
+			<fieldset>
+				Vous êtes un homme
+				<input type = "radio" name ="sexe" value = "homme"/>
+				Vous êtes un femme
+				<input type = "radio" name ="sexe" value = "femme"/>
+			</fieldset>
+			<br>
+			<select name = "formation">
+				<option value = "développeur">développeur</option>
+				<option value = "autre">autre</option>
+			</select>
+			<br> 
+			si vous avez répondu autre, précisez <input type= "text" name = "formation autre"/>
+			<br>
+			<br>
+			<fieldset>
+				<legend>Vos connaissances</legend>
+					<input type="checkbox" name="compétence1" value=
+					"c#" /> C#
+					<input type="checkbox" name="compétence2" value=
+					"html/css"/> HTML/CSS
+					<input type="checkbox" name="compétence3" value=
+					"sql" /> SQL 
+			</fieldset>
+			<br>
+			<br>
+			<select name = "salaire">
+				<option value = "<1000€">&lt;1000€</option>
+				<option value = ">1000€ et <2000€">&gt;1000€ et &lt;2000€</option>
+				<option value = ">2000€">&gt;2000€</option>
+			</select>
+			<br> 
+			en quelle année avez-vous suivi le stage afpa? <input type= "text"/>
+			<br>
+			<br>
+			<textarea name ="vos commentaires" rows ="4" cols ="50" placeholder="Vos commentaires"></textarea>
+			<br>
+			<h3><b>merci d'avoir répondu au questionnaire</b></h3>
+			<br>
+			<input type="submit" value="validez" />
+			<input type="reset" value="annulez" /> 	
+		</form>
+ 
+ 	</body>
+</html>
