@@ -1,0 +1,10 @@
+body {
+ background: linear-gradient(white, black);
+ margin-left:28px;
+}
+h3 {
+ font-size:48pt;
+ color:#000000;
+ font-style:italic;
+ border:ridge thick red
+}
