@@ -1,10 +1,56 @@
-body {
- background: linear-gradient(white, black);
- margin-left:28px;
+.vert
+{
+	width:70%;
+	height:70%;
+	background-color:green;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+
+	border-top: solid 2px; 
+	border-left: solid 2px;
+	border-right: solid 2px;
+	
 }
-h3 {
- font-size:48pt;
- color:#000000;
- font-style:italic;
- border:ridge thick red
+
+.rouge
+{
+	width:30%;
+	height:70%;
+	background-color:red;
+	top: 0px;
+	right: 0px;
+	position: absolute;
+
+	border-top: solid 2px; 
+	border-left: solid 2px;
+	border-right: solid 2px;
+	border-bottom: solid 2px;
+}
+
+.bleu
+{
+	width:70%;
+	height:30%;
+	background-color:blue;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+
+
+}
+
+.jaune
+{
+	width:30%;
+	height:30%;
+	background-color:yellow;
+	bottom: 0px;
+	right: 0px;
+	position: absolute;
+
+	border-top: solid 2px; 
+	border-left: solid 2px;
+	border-right: solid 2px;
+	border-bottom: solid 2px;
 }

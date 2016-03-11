@@ -1,0 +1,16 @@
+fieldset
+{
+	background: linear-gradient(#FFFFFF, #E8F6C3);
+	border-radius: 20px;
+	border-left: 0px;
+	border-right: 0px;
+	
+	width: 28%;
+}
+
+/*input
+{
+	position: fixed;
+	left: 20%;
+}*/
+
