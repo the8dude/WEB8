@@ -1,0 +1,82 @@
+body
+{
+	background-color: #607D8B;
+}
+
+.div1
+{
+	background-color: #607D8B;
+	border: solid 2px;
+	border-color: white;
+	border-radius: 100px;
+	width: 1000px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.divtext
+{
+	color: white;
+	font-weight: bolder;
+	font-size: 40pt;
+	padding-top: 90px;
+	padding-left: 285px;
+	width: 430px;
+}
+
+.div2
+{
+	border: solid 2px;
+	border-color: white;;
+	border-radius: 100px;
+	width: 1000px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+}
+
+.divtext2
+{
+	color: white;
+	font-weight: bolder;
+	font-size: 20pt;
+	padding-top: 90px;
+	padding-left: 225px;
+	width: 550px;
+}
+
+.div3
+{
+	padding-left: 365px;
+	padding-top: 40px;
+}
+
+.textBox1
+{
+	height: 36px;
+	border-radius: 18px;
+	border: solid 1px;
+	border-color: white;
+	width: 180px;
+
+}
+
+.button1
+{
+	border-radius: 18px;
+	font-weight: bold;
+	background-color: rgb(255, 235, 59);
+}
+
+.btn2
+{
+	border-radius: 18px;
+	font-weight: bold;
+	background-color: rgb(255, 235, 59);
+	margin-top: 80px;
+	margin-left: 450px;
+}
