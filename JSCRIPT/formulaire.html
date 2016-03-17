@@ -1,0 +1,175 @@
+<html>
+<head>
+
+	<title></title>
+	<title>Fonctions Javascript</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.blue_grey-red.min.css" />
+	<script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
+
+	<link rel="stylesheet" href="formulaire.css" />
+	
+
+</head>
+
+<body>
+
+	<form method="get" action="http://bienvu.net/script.php">
+
+			
+
+		<div class="div0">
+
+			<h3>Vos coordonnées :</h3>
+
+			<div class="div"><span class= "textA">* </span><span class= "textB">Ces zones sont obligatoires pour envoyer le formulaire.</span></div>
+
+	<div class="form">
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col textForm colText">Société :</div>
+			  <div class="mdl-cell mdl-cell--3-col">
+
+			  		<input class="textBox" type="text" name="societe" id="societe"/>
+
+			  </div>
+			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col textForm colText">Personne à contacter :</div>
+			  <div class="mdl-cell mdl-cell--3-col">
+
+			  		<input class="textBox" type="text" name="contact" id="contact"/>
+
+			  </div>
+			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col textForm colText marginAdresse">Adresse de l'entreprise :</div>
+			  <div class="mdl-cell mdl-cell--3-col">
+
+			  		<textarea name="adresse" rows="5" cols="30" class="textArea1" id="adresse"></textarea>
+
+			  </div>
+			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA"></span></div>
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col textForm colText">Code Postal :</div>
+			  <div class="mdl-cell mdl-cell--3-col">
+
+			  		<input class="textBox" type="text" name="codepostal" id="codepostal"/>
+
+			  </div>
+			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col textForm colText">Ville :</div>
+			  <div class="mdl-cell mdl-cell--3-col">
+
+			  		<input class="textBox" type="text" name="ville" id="ville"/>
+
+			  </div>
+			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col textForm colText">E-mail :</div>
+			  <div class="mdl-cell mdl-cell--3-col">
+
+			  		<input class="textBox" type="text" name="email" id="email"/>
+
+			  </div>
+			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col textForm colText">Téléphone :</div>
+			  <div class="mdl-cell mdl-cell--3-col">
+
+			  		<input class="textBox" type="text" name="tel" id="tel"/>
+
+			  </div>
+			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA"></span></div>
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col colText">
+
+			  	<div class="textForm marginProjet">Sélectionnez<br>l'environnement<br>duprojet:</div>
+			  	<div >
+			  		<select name="choix" class="select" id="choix">
+			  			<option value="Choisissez">Choisissez</option>
+			  			<option value="Access">Access</option>
+						<option value="Java">Java</option>
+						<option valu="Windev">Windev</option>
+						<option value="Delphi">Delphi</option>
+						<option value="Visual Basic">Visual Basic</option>
+						<option value="Power Builder">Power Builder</option>
+						<option value="Internet">Internet</option>
+						<option valu="Intranet">Internet</option>
+						<option value="Windows NT">Windows NT</option>
+						<option value="Unix">Unix</option>
+						<option value="SQL">SQL Server</option>
+						<option valu="Oracle">Oracle</option>
+						<option value="Autres">Autres...</option>
+			  		</select>
+			  	</div>
+			  </div>
+
+			  <div class="mdl-cell mdl-cell--3-col">
+
+			  		<textarea class="textArea2" name="projet" rows="8" cols="30" id="projet"></textarea>
+
+			  </div>
+			  
+			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA"></span></div>
+			  <div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
+
+			<div class="mdl-grid">
+			  <div class="mdl-cell mdl-cell--4-col"></div>
+			  <div class="mdl-cell mdl-cell--4-col ">
+
+			  	<div class="btns">
+			  		<input type="submit" name="envoyer" value="Envoyer" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button1" id="envoyer"/>
+			  		<input type="reset" name="effacer" value="Effacer" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button2" id="effacer"/>
+			  	</div>
+
+			  </div>
+			  <div class="mdl-cell mdl-cell--4-col"></div>
+			</div>
+		</div>
+
+	</div>
+
+	</form>
+
+</body>
+
+
+
+</html>	
+
+<script src="formulaire.js"></script>

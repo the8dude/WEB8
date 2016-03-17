@@ -3,13 +3,19 @@ body
 	background-color: #607D8B;
 }
 
+.div0
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .div1
 {
 	background-color: #607D8B;
 	border: solid 2px;
 	border-color: white;
 	border-radius: 100px;
-	width: 50%+100px;
+	width: 1000px;
 	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -23,8 +29,9 @@ body
 	font-weight: bolder;
 	font-size: 40pt;
 	padding-top: 90px;
-	padding-left: 285px;
 	width: 430px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .div2
@@ -45,14 +52,18 @@ body
 	font-weight: bolder;
 	font-size: 20pt;
 	padding-top: 90px;
-	padding-left: 225px;
 	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .div3
 {
-	padding-left: 365px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 40px;
+	width: 280px;
+
 }
 
 .textBox1
@@ -79,7 +90,8 @@ body
 	font-weight: bold;
 	background-color: rgb(255, 235, 59);
 	margin-top: 50px;
-	margin-left: 450px;
+	margin-left: auto;
+	margin-right: auto;	
 }
 
 #lbl1
@@ -98,5 +110,16 @@ body
 	transition: color 3s ease;
 
 }
+
+.div4
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
 
 
