@@ -17,7 +17,7 @@
 
 <body>
 
-	<form method="get" action="http://bienvu.net/script.php">
+	<form method="post" action="http://bienvu.net/script.php" id="form1">
 
 			
 
@@ -35,6 +35,7 @@
 			  <div class="mdl-cell mdl-cell--3-col">
 
 			  		<input class="textBox" type="text" name="societe" id="societe"/>
+			  		<div id="societe2" class="alert">Veuillez saisir le nom de société</div>
 
 			  </div>
 			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
@@ -47,6 +48,7 @@
 			  <div class="mdl-cell mdl-cell--3-col">
 
 			  		<input class="textBox" type="text" name="contact" id="contact"/>
+			  		<div id="contact2" class="alert">Veuillez saisir le nom d'un contact</div>
 
 			  </div>
 			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
@@ -71,6 +73,7 @@
 			  <div class="mdl-cell mdl-cell--3-col">
 
 			  		<input class="textBox" type="text" name="codepostal" id="codepostal"/>
+			  		<div id="codepostal2" class="alert">Veuillez saisir un code postal</div>
 
 			  </div>
 			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
@@ -83,6 +86,7 @@
 			  <div class="mdl-cell mdl-cell--3-col">
 
 			  		<input class="textBox" type="text" name="ville" id="ville"/>
+			  		<div id="ville2" class="alert">Veuillez saisir une ville</div>
 
 			  </div>
 			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
@@ -95,6 +99,7 @@
 			  <div class="mdl-cell mdl-cell--3-col">
 
 			  		<input class="textBox" type="text" name="email" id="email"/>
+			  		<div id="email2" class="alert">Veuillez saisir un email</div>
 
 			  </div>
 			  <div class="mdl-cell mdl-cell--1-col"><span class= "textA">* </span></div>
@@ -115,7 +120,7 @@
 
 			<div class="mdl-grid">
 			  <div class="mdl-cell mdl-cell--2-col"></div>
-			  <div class="mdl-cell mdl-cell--4-col colText">
+			  <div class="mdl-cell mdl-cell--4-col colText align">
 
 			  	<div class="textForm marginProjet">Sélectionnez<br>l'environnement<br>duprojet:</div>
 			  	<div >
