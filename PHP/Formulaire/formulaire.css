@@ -1,0 +1,169 @@
+body
+{
+	background-color: #607D8B;
+}
+
+.div0
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 28px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	width: 1000px;
+	border: solid 3px;
+	border-radius: 50px;
+	border-color: white;
+}
+
+.form
+{
+	border: solid 3px;
+	border-radius: 50px;
+	border-color: white;
+	margin-left: -41px;
+	margin-right: -2px;
+	margin-bottom: -42px;
+}
+
+h3
+{
+	color: white;
+}
+
+.div
+{
+	margin-bottom: 20px;
+}
+
+.textA
+{
+	font-weight: bold;
+	color: rgb(187,0 ,0);
+	font-size: 28px;
+
+}
+
+.textB
+{
+	font-weight: bold;
+	color: rgb(128, 33, 60);
+	font-size: 20px;
+
+}
+
+.textForm
+{
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	
+}
+
+.colText
+{
+	width: 260px;
+}
+
+.marginProjet
+{
+	margin-bottom: 20px;
+}
+
+.marginAdresse
+{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.textBox
+{
+	width: 240px;
+	height: 24px;
+	border: solid 2px;
+	border-color: #607D8B;
+	border-radius: 20px;
+	padding-left: 10px;
+
+}
+
+.textArea1
+{
+	border: solid 1px;
+	border-radius: 20px;
+	border-color: white;
+	padding-left: 10px;
+	padding-top: 12px;
+	width: 240px;
+}
+
+.textArea2
+{
+	border: solid 1px;
+	width: 180px;
+	border-radius: 32px;
+	border-color: white;
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 240px;
+}
+
+.select
+{
+	border: solid 1px;
+	border-radius: 20px;
+	border-color: white;
+}
+
+.button1
+{
+	border-radius: 18px;
+	font-weight: bold;
+	background-color: rgb(255, 235, 59);
+	margin-left: 412px; 
+	margin-right: auto;
+	margin-top: 22px;
+}
+.button2
+{
+	border-radius: 18px;
+	font-weight: bold;
+	background-color: rgb(255, 235, 59);
+	margin-right: auto;
+	margin-top: 22px;
+	width: 134px;
+}
+
+.btns
+{
+	border: solid 3px;
+	border-radius: 50px;
+	border-color: white;
+	width: 1037px;
+	height: 84px;
+	margin-left: -358px;
+	margin-bottom: -18px;
+}
+
+.align
+{
+	margin-top: 20px;
+}
+
+.alert
+{
+	font-weight: bold;
+	font-size: 14px;
+	color: rgb(128, 33, 60);
+	padding-left: 6px;
+	
+}
+
+textarea:focus, input:focus{
+		    outline: none;
+		}
+
+.marginGrid
+{
+	margin-left: 80px;
+}

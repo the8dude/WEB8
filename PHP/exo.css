@@ -1,0 +1,22 @@
+.bordure
+{
+	border: solid 2px;
+	border-color: grey;
+	text-align: right;
+
+}
+
+.firstcolrow
+{
+	background-color: grey;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.text
+{
+	font-weight: bold;
+	padding: 8px;
+}
+

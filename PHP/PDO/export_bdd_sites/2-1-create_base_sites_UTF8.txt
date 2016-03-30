@@ -1,0 +1,54 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 3.1.1
+-- http://www.phpmyadmin.net
+--
+-- Serveur: localhost
+-- Généré le : Ven 05 Février 2010 à 07:25
+-- Version du serveur: 5.1.30
+-- Version de PHP: 5.2.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de données : `sites`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `liens`
+--
+
+CREATE TABLE IF NOT EXISTS `liens` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `titre` varchar(128) NOT NULL,
+  `webmaster` varchar(32) NOT NULL,
+  `description` text NOT NULL,
+  `url` varchar(128) NOT NULL,
+  `theme` enum('actualité','musique','sports','sciences','cinéma','divers') NOT NULL DEFAULT 'actualité',
+  `date` date NOT NULL DEFAULT '2009-01-01',
+  `affichage` enum('oui','non') NOT NULL DEFAULT 'oui',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;
+
+--
+-- Contenu de la table `liens`
+--
+
+INSERT INTO `liens` (`id`, `titre`, `webmaster`, `description`, `url`, `theme`, `date`, `affichage`) VALUES
+(1, 'Tout JavaScript', 'Olivier Hondermarck', 'Le javascript.', 'http://www.toutjavascript.com', 'actualité', '2009-04-21', 'oui'),
+(2, 'php.net', 'php group', 'Site en français dédié à php', 'http://fr.php.net', 'divers', '2009-02-12', 'oui'),
+(3, 'TV online', 'youWebTV', 'Télévision et radio sur le web', 'http://www.youweb.tv/fr/tvonline/web-tv.html', 'actualité', '2009-03-27', 'oui'),
+(4, 'France 24', ' webdesk@france24.com', 'Actualité Internationale 24h/24', 'http://www.france24.com', 'actualité', '2009-04-01', 'oui'),
+(5, 'L''équipe', 'webmaster@lequipe.fr', 'Tout le sport...', 'http://www.lequipe.fr/', 'sports', '2009-04-09', 'oui'),
+(7, 'Météofrance', 'webmaster@meteofrance.fr', 'Le site de la météo nationale.', 'http://france.meteofrance.com/', 'actualité', '2009-04-19', 'oui'),
+(11, 'Concepteurs Développeurs de sites internet', 'tsig.cdmia@afpa.unicaen.fr', 'Site développé par les stagiaires CDSI 5 du centre de Caen / Ifs dans le cadre de leur formation.', 'http://cdsi@afpa.unicaen.fr', 'actualité', '2009-04-20', 'oui'),
+(15, 'L''artiste', 'webmaster@ultime.fr', 'musique', 'www.ultime.fr', 'actualité', '2009-04-24', 'oui'),
+(16, 'L''art de la table', 'webmaster@artTable.fr', 'miam', 'www.artTable.fr', 'actualité', '2009-04-24', 'oui'),
+(17, 'L''écho "noir"', 'webmaster@echoNoir.fr', 'test', 'www.echoNoir.fr', 'actualité', '2009-04-24', 'oui'),
+(20, 'PHP Sources', '@@phpsources', 'Sources et tutoriels PHP', 'www.phpsources.org', 'actualité', '2009-04-24', 'oui'),
+(21, 'xhtml.le-developpeur-web', 'webmaster@xhtml', 'Site sur xhtml', 'http://xhtml.le-developpeur-web.com', 'actualité', '2009-04-24', 'oui'),
+(22, 'PHP.Net france', 'php-webmaster@lists.php.net', 'Site référence PHP.', 'http://fr.php.net', 'actualité', '2009-04-24', 'oui'),
+(23, 'expreg.com', 'ADAM Benjamin', 'Site sur l''utilisation des expressions régulières en PHP.', 'http://www.expreg.com/ereg.php', 'sciences', '2009-04-24', 'oui'),
+(24, 'Le modèle MVC pour PHP par serge TAHE', 'serge TAHE', 'Explication et exemple d''architecture MVC pour PHP.', 'http://tahe.developpez.com/web/php/mvc/', 'sciences', '2009-04-24', 'oui'),
+(25, 'Site de MySQL', 'Sun microsystem', 'Site de SUN sur MySQL.', 'http://dev.mysql.com', 'actualité', '2009-04-24', 'oui');
