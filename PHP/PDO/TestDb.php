@@ -26,13 +26,13 @@
  	foreach ($liens as $li) {
  	?>
 
- 	 echo $li->titre . "\t";
- 	 echo $li->webmaster <br />
- 	 echo $li->description<br />
- 	 echo $li->url<br />
- 	 echo $li->theme<br /><br />
+ 	<?php echo $li->titre ?><br />
+ 	<?php echo $li->webmaster ?><br />
+ 	<?php echo $li->description ?><br />
+ 	<?php echo $li->url ?><br />
+ 	<?php echo $li->theme ?><br /><br />
 
- 	
+ 	<?php
  	}
  	?>
 
