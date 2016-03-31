@@ -42,7 +42,7 @@
 						URL
 					</th>
 					<th>
-						Afficher
+						
 					</th>
 				</tr>
 				</thead>

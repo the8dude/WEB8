@@ -20,18 +20,19 @@ h2
 
 .textBox
 {
-	width: 100%;
+	width: 90%;
 	height: 28px;
 	border-radius: 20px;
 	outline: none;
 	padding-left: 10px;
 	border: solid 2px;
 	border-color: #607D8B;
+	color: #607D8B;
 }
 
 .textArea
 {
-	width: 100%;
+	width: 90%;
 	height: 100px;
 	border-radius: 20px;
 	outline: none;
@@ -39,20 +40,21 @@ h2
 	padding-top: 10px;
 	border: solid 2px;
 	border-color: #607D8B;
+	color: #607D8B;
 }
 
 select
 {
-	width: 100px;
+	width: 90%;
+	height: 28px;
 	border: solid 1px;
 	border-radius: 20px;
-	border-color: white;
+	border: solid 2px;
+	border-color: #607D8B;
 	padding-left: 10px;
-}
-
-.checkBox
-{
-	background-color: white;
+	outline: none;
+	color: #607D8B;
+	font-weight: bold;
 }
 
 .btn
@@ -67,7 +69,24 @@ select
 .label
 {
 	margin-left: 8px;
-	color: white;
+	color: #607D8B;
 	text-decoration: none;
 	font-size: 14px;  
+}
+
+.divform
+{
+	background-color: white;
+	border-radius: 20px;
+	padding-left: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#retour
+{
+	text-align: right;
+	color: white;
+	text-decoration: none;
+	font-size: 14px; 
 }
