@@ -38,7 +38,9 @@
 
         <form method="post" action="script_modifier.php" id="form2">
 
-          <input type="hidden" name="id" value="<?=$id?>">
+        <!-- cacher l'ID appelé -->
+        <input type="hidden" name="id" value="<?=$id?>">
+        
         <div class="label">Titre</div>
         <div><input class="textBox" type="text" name="titre" id="titre" value="<?=$ligne->titre?>" /></div>
         <br>
