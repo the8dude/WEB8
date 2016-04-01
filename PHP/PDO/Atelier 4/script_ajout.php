@@ -1,11 +1,4 @@
-<html>
-<head>
-	<title>Atelier 4 PDO</title>
-	<meta charset="utf-8">
-</head>
-<body>
-
-	<?php
+<?php
 		
 		$titre = $_POST['titre'];
 		$description = $_POST['description'];
@@ -19,12 +12,9 @@
 	<!-- Connexion à la base de données -->
 	<?php 
 
-	$db = new PDO("mysql:host=localhost;dbname=sites", "root", "");
+	$db = new PDO("mysql:host=localhost;charset=utf8;dbname=sites", "root", "");
 	$db->query("INSERT INTO liens(id, titre, webmaster, url, description, theme, date, affichage) VALUES('', '$titre', '$webmaster', '$url', '$description', '$theme', '', '$visible')");
 	
-	header('Location: http://127.0.0.1/PDO/Atelier%204/liste.php');
+	header('Location: liste.php');
 	
 	?>
-
-</body>
-</html>

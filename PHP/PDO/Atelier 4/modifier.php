@@ -16,7 +16,11 @@
 
 	<!-- Connexion à la base de données -->
 	<?php 
-	$db = new PDO("mysql:host=localhost;charset=utf8;dbname=sites", "root", "");
+  $id = $_GET["id"];
+  $db = new PDO("mysql:host=localhost;charset=utf8;dbname=sites", "root", "");
+  $requete = $db->prepare("select * from liens where id=" . $id);
+  $requete->execute();
+  $ligne = $requete->fetch(PDO::FETCH_OBJ);
 	?>
 
 	
@@ -32,18 +36,19 @@
   			
       <div class="divform">
 
-        <form method="post" action="script_ajout.php" id="form1">
+        <form method="post" action="script_modifier.php" id="form2">
 
+          <input type="hidden" name="id" value="<?=$id?>">
         <div class="label">Titre</div>
-        <div><input class="textBox" type="text" name="titre" id="titre" placeholder="Entrez le titre"/></div>
+        <div><input class="textBox" type="text" name="titre" id="titre" value="<?=$ligne->titre?>" /></div>
         <br>
 
         <div class="label">Description</div>
-        <div><textarea class="textArea" name="description"  id="description" placeholder="Description du site"></textarea></div>
+        <div><textarea class="textArea" name="description"  id="description" value="<?=$ligne->description?>"></textarea></div>
         <br>
 
         <div class="label">URL</div>
-        <div><input class="textBox" type="text" name="url" id="url" placeholder="Entrez l'adresse URL du site"/></div>
+        <div><input class="textBox" type="text" name="url" id="url" value="<?= $ligne->url ?>" /></div>
         <br>
 
         <div class="label">Thème</div>
@@ -60,12 +65,12 @@
         <br>
 
         <div class="label">Webmaster</div>
-        <div><input class="textBox" type="text" name="webmaster" id="webmaster" placeholder="Entrez une adresse mail"/></div>
+        <div><input class="textBox" type="text" name="webmaster" id="webmaster" value="<?=$ligne->webmaster?>"/></div>
         <br>
 
         <div>
           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" name="visible">
+          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" name="visible" checked>
           <span class="mdl-checkbox__label label">Visible</span>
           </label>        
         </div>

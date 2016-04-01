@@ -16,8 +16,8 @@
 
 	<!-- Connexion à la base de données -->
 	<?php 
-	$db = new PDO("mysql:host=localhost;dbname=sites", "root", "");
-	$requete = $db->query("select * from liens");
+	$db = new PDO("mysql:host=localhost;charset=utf8;dbname=sites", "root", "");
+	$requete = $db->query("select * from liens where affichage='oui'");
 	$tableau = $requete->fetchAll(PDO::FETCH_OBJ);
 	?>
 
@@ -75,7 +75,7 @@
 				</tbody>
 			</table>
 			<hr />
-			<div class="div1">
+				<div class="div1">
   					<span class="texte">Ajouter un enregistrement</span>
   					<a href="ajout.php">
   					<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab btn2">
@@ -83,6 +83,7 @@
   					</a>
 					</button>
   				</div>
+  			<hr />
   		</div>
 
   		<div class="mdl-cell mdl-cell--3-col"></div>
