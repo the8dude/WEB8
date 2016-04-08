@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.blue_grey-red.min.css" />
 	<script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
 
-	<link rel="stylesheet" href="http://127.0.0.1/CodeIgniter/ci2/css/liste.css" />
+	<link rel="stylesheet" href="<?=base_url("css/liste.css")?>" />
 
 </head>
 
@@ -53,7 +53,9 @@
 					<!-- Bouton de détails -->
 					<td class="alignbtn">
 
-						<a href="details/<?=$ligne->id?>">
+							
+							<a href="<?= site_url("liens/details/".$ligne->id) ?>">
+							
 							<button class="mdl-button mdl-js-button mdl-button--raised btn">
 							DETAILS	  							
 							</button>
@@ -73,7 +75,7 @@
 
 				<div class="div1">
   					<span class="texte">Ajouter un enregistrement</span>
-  					<a href="ajout.php">
+  					<a href="<?=site_url("liens/ajout")?>">
   					<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab btn2">
   					<i class="material-icons">add</i>
   					</a>

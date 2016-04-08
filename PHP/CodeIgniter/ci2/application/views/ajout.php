@@ -8,31 +8,25 @@
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.blue_grey-red.min.css" />
 	<script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
 
-	<link rel="stylesheet" href="ajout.css" />
+	<!-- <link rel="stylesheet" href="http://127.0.0.1/CodeIgniter/ci2/css/ajout.css" /> -->
+  <link rel="stylesheet" href="<?=base_url("css/ajout.css")?>" />
 
 </head>
 
 <body>
-
-	<!-- Connexion à la base de données -->
-	<?php 
-	$db = new PDO("mysql:host=localhost;charset=utf8;dbname=sites", "root", "");
-	?>
-
-	
 
 	<div class="mdl-grid">
   		<div class="mdl-cell mdl-cell--3-col"></div>
 
   		<div class="mdl-cell mdl-cell--6-col">
   			<div class="div0">
-  				<h2>Formulaire</h2>  					
+  				<h2><?=$titre?></h2>  					
   			</div>
   			<hr />
   			
       <div class="divform">
 
-        <form method="post" action="script_ajout.php" id="form1">
+        <form method="post" action="<?=site_url("liens/script_ajout")?>" id="form1">
 
         <div class="label">Titre</div>
         <div><input class="textBox" type="text" name="titre" id="titre" placeholder="Entrez le titre"/></div>
@@ -65,7 +59,8 @@
 
         <div>
           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" name="visible">
+          <input type="hidden" name="affichage"  value="non" >  
+          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" name="affichage"  value="oui" />
           <span class="mdl-checkbox__label label">Visible</span>
           </label>        
         </div>
@@ -80,7 +75,7 @@
       </div>
   			
 			<hr />
-      <div id="retour"><a href="liste.php" id="retour">Retour à la liste</a></div>
+      <div id="retour"><a href="<?=site_url("liens/liste")?>" id="retour">Retour à la liste</a></div>
 			
 			<hr />
   				

@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.blue_grey-red.min.css" />
 	<script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
 
-	<link rel="stylesheet" href="http://127.0.0.1/CodeIgniter/ci2/css/modifier.css" />
+	<!-- <link rel="stylesheet" href="http://127.0.0.1/CodeIgniter/ci2/css/modifier.css" /> -->
+  <link rel="stylesheet" href="<?=base_url("css/modifier.css")?>" />
 
 </head>
 
@@ -20,13 +21,13 @@
 
   		<div class="mdl-cell mdl-cell--6-col">
   			<div class="div0">
-  				<h2><?=$titre3?></h2>  					
+  				<h2><?=$titre?></h2>  					
   			</div>
   			<hr />
   			
       <div class="divform">
 
-        <form method="post" action="script_modifier.php" id="form2">
+        <form method="post" action="<?=site_url("liens/script_modifier")?>" id="form2">
 
         <!-- cacher l'ID appelé -->
         <input type="hidden" name="id" value="<?=$ligne->id?>">
@@ -62,7 +63,10 @@
 
         <div>
           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" name="visible" checked>
+          <input type="hidden" name="affichage"  value="non" >  
+          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" name="affichage"  value="oui" 
+          <?php if ($ligne->affichage == "oui") echo "checked"; ?>
+          />
           <span class="mdl-checkbox__label label">Visible</span>
           </label>        
         </div>
@@ -77,7 +81,7 @@
       </div>
   			
 			<hr />
-      <div id="retour"><a href="http://127.0.0.1/CodeIgniter/ci2/index.php/liens/liste" id="retour">Retour à la liste</a></div>
+      <div id="retour"><a href="<?=site_url("liens/liste")?>" id="retour">Retour à la liste</a></div>
 			
 			<hr />
   				

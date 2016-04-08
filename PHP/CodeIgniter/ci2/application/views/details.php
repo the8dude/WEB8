@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.blue_grey-red.min.css" />
 	<script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
 
-	<link rel="stylesheet" href="http://127.0.0.1/CodeIgniter/ci2/css/details.css" />
+	<!-- <link rel="stylesheet" href="http://127.0.0.1/CodeIgniter/ci2/css/details.css" /> -->
+	<link rel="stylesheet" href="<?=base_url("css/details.css")?>" />
 
 </head>
 
@@ -82,14 +83,14 @@
 
 					<tr>
 						<td>
-							<a href="http://127.0.0.1/CodeIgniter/ci2/index.php/liens/modifier/<?=$ligne->id?>">
+							<a href="<?= site_url("liens/modifier/".$ligne->id) ?>">
 								<button class="mdl-button mdl-js-button mdl-button--raised btn">
 									MODIFIER  							
 								</button>
 							</a>
 						</td>
 						<td class="mdl-data-table__cell--non-numeric">
-							<a href="script_supprimer/<?=$ligne->id?>">
+							<a href="<?= site_url("liens/script_supprimer/".$ligne->id) ?>">
 								<button class="mdl-button mdl-js-button mdl-button--raised btn">
 									SUPPRIMER
 								</button>
@@ -104,7 +105,7 @@
       
   			
 			<hr />
-      <div id="retour"><a href="http://127.0.0.1/CodeIgniter/ci2/index.php/liens/liste" id="retour">Retour à la liste</a></div>
+      <div id="retour"><a href="<?=site_url("liens/liste")?>" id="retour">Retour à la liste</a></div>
 			
 			<hr />
   				

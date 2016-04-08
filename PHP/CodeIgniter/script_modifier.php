@@ -27,6 +27,6 @@
 	
 	$requete->execute();
 
-	header('Location: liste.php');
+	header('Location: http://127.0.0.1/CodeIgniter/ci2/index.php/liens/liste');
 	
 	?>
