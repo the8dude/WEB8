@@ -1,0 +1,30 @@
+h3
+{
+	font-weight: bold;
+	font-family: Courier Sans MS;
+}
+
+#submit
+{
+	overflow: hidden;
+	border-radius: 20px;
+
+}
+
+#news
+{
+	text-align: center;
+	font-weight: bold;
+	font-family: Courier Sans MS;
+	color: black;
+}
+
+img
+{
+	width: 100%;
+}
+
+iframe
+{
+	width: 100%;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.4.5.js"></script>
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+	<link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+	<div data-role="page" id="page1">
+		<div data-role="header">
+			<img src="logo.png">
+			<a href="#page2" class="ui-btn-right" data-transition="slide">TEST</a> 			 
+		</div>
+
+
+		<div data-role="content">
+			<div>
+				<span>
+					<input type="search" name="search-1" id="search-5" value="" placeholder="Find a movie...">			
+					<button class="ui-btn ui-corner-all">Search</button>	
+				</span>
+						
+				<hr>
+					<div id="news">
+						Last News
+					</div>
+				<hr>
+
+					
+				<div>
+					Rogue One : A STAR WARS Story...
+				</div>
+				<div>
+					<img src="swro.png"/>
+				</div>
+				<div>
+					Thursday, April 7th : The official trailer !
+				</div>
+				<div>
+					<iframe src="https://www.youtube.com/embed/sC10BUoyejQ" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h1><!-- Page1 - En bas --></h1>
+		</div>
+	</div>
+
+
+	<div data-role="page" id="page2">
+		<div data-role="header">
+			<img src="logo.png">
+			<a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>
+			<a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">Back</a>
+		</div>
+
+
+		<div data-role="content">
+			<div>
+				
+
+			</div>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h1><!-- Page1 - En bas --></h1>
+		</div>
+	</div>
+
+</body>
+</html>
