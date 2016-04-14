@@ -1,0 +1,54 @@
+.headerback
+{
+	background-color: #242424;
+	padding: -8px;
+}
+
+.bodyback
+{
+	background-image: url(http://127.0.0.1/FilRougeWeb/WebFR/Site/Image/fond.jpg);
+	background-size: 100%;
+	/*background-attachment: fixed;*/
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.footerback
+{
+	background-color: #242424;
+}
+
+.header
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.header1
+{
+	background-color: black;
+	color: #29ABE2;
+}
+
+#img1
+{
+	width: 550px;
+	height: 175px;
+}
+
+.header2
+{
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	border: solid 1px;
+	border-color: #29ABE2; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+span
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
