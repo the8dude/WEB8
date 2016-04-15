@@ -16,16 +16,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '4248570e4ded2e9fa7-20577444',
-  'variables' => 
-  array (
-    'products' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_570e4ded366690_42221553',
+  'unifunc' => 'content_57108d73e73583_91560624',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_570e4ded366690_42221553')) {function content_570e4ded366690_42221553($_smarty_tpl) {?>		
+<?php if ($_valid && !is_callable('content_57108d73e73583_91560624')) {function content_57108d73e73583_91560624($_smarty_tpl) {?>		
 									
 		
 	
@@ -538,15 +534,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<div class="product-container" itemscope itemtype="https://schema.org/Product">
 				<div class="left-block">
 					<div class="product-image-container">
-						<a class="product_img_link" href="http://127.0.0.1/prestashop/gibson/8-guitare-gibson-les-paul.html" title="guitare gibson les paul" itemprop="url">
+						<a class="product_img_link" href="http://127.0.0.1/prestashop/accueil/8-guitare-gibson-les-paul.html" title="guitare gibson les paul" itemprop="url">
 							<img class="replace-2x img-responsive" src="http://127.0.0.1/prestashop/24-home_default/guitare-gibson-les-paul.jpg" alt="guitare gibson les paul" title="guitare gibson les paul"  width="250" height="250" itemprop="image" />
 						</a>
 													<div class="quick-view-wrapper-mobile">
-							<a class="quick-view-mobile" href="http://127.0.0.1/prestashop/gibson/8-guitare-gibson-les-paul.html" rel="http://127.0.0.1/prestashop/gibson/8-guitare-gibson-les-paul.html">
+							<a class="quick-view-mobile" href="http://127.0.0.1/prestashop/accueil/8-guitare-gibson-les-paul.html" rel="http://127.0.0.1/prestashop/accueil/8-guitare-gibson-les-paul.html">
 								<i class="icon-eye-open"></i>
 							</a>
 						</div>
-						<a class="quick-view" href="http://127.0.0.1/prestashop/gibson/8-guitare-gibson-les-paul.html" rel="http://127.0.0.1/prestashop/gibson/8-guitare-gibson-les-paul.html">
+						<a class="quick-view" href="http://127.0.0.1/prestashop/accueil/8-guitare-gibson-les-paul.html" rel="http://127.0.0.1/prestashop/accueil/8-guitare-gibson-les-paul.html">
 							<span>Aper&ccedil;u rapide</span>
 						</a>
 																			<div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
@@ -559,7 +555,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 																		
 									
 															</div>
-																			<a class="new-box" href="http://127.0.0.1/prestashop/gibson/8-guitare-gibson-les-paul.html">
+																			<a class="new-box" href="http://127.0.0.1/prestashop/accueil/8-guitare-gibson-les-paul.html">
 								<span class="new-label">Nouveau</span>
 							</a>
 																	</div>
@@ -567,7 +563,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</div>
 				<div class="right-block">
 					<h5 itemprop="name">
-												<a class="product-name" href="http://127.0.0.1/prestashop/gibson/8-guitare-gibson-les-paul.html" title="guitare gibson les paul" itemprop="url" >
+												<a class="product-name" href="http://127.0.0.1/prestashop/accueil/8-guitare-gibson-les-paul.html" title="guitare gibson les paul" itemprop="url" >
 							guitare gibson les paul
 						</a>
 					</h5>
@@ -586,7 +582,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 																													<a class="button ajax_add_to_cart_button btn btn-default" href="http://127.0.0.1/prestashop/panier?add=1&amp;id_product=8&amp;token=298122c479d9d96cccbabb743d60ae34" rel="nofollow" title="Ajouter au panier" data-id-product-attribute="0" data-id-product="8" data-minimal_quantity="1">
 									<span>Ajouter au panier</span>
 								</a>
-																			<a class="button lnk_view btn btn-default" href="http://127.0.0.1/prestashop/gibson/8-guitare-gibson-les-paul.html" title="Afficher">
+																			<a class="button lnk_view btn btn-default" href="http://127.0.0.1/prestashop/accueil/8-guitare-gibson-les-paul.html" title="Afficher">
 							<span>D&eacute;tails</span>
 						</a>
 					</div>

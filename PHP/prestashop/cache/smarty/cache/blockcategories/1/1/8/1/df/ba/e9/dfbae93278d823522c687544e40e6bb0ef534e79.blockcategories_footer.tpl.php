@@ -16,19 +16,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '19245570e4ded8651f5-32160493',
-  'variables' => 
-  array (
-    'isDhtml' => 0,
-    'blockCategTree' => 0,
-    'child' => 0,
-    'numberColumn' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_570e4ded9a3329_32925657',
+  'unifunc' => 'content_57108d74260225_14461129',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_570e4ded9a3329_32925657')) {function content_570e4ded9a3329_32925657($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_57108d74260225_14461129')) {function content_57108d74260225_14461129($_smarty_tpl) {?>
 <!-- Block categories module -->
 <section class="blockcategories_footer footer-block col-xs-12 col-sm-2">
 	<h4>Catégories</h4>
@@ -48,6 +41,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	href="http://127.0.0.1/prestashop/17-gibson" title="Guitare Gibson">
 		Gibson
 	</a>
+			<ul>
+												
+<li class="last">
+	<a 
+	href="http://127.0.0.1/prestashop/18-les-paul" title="">
+		Les Paul
+	</a>
+	</li>
+
+									</ul>
 	</li>
 
 									</ul>

@@ -1,9 +1,118 @@
+/*STYLE DU HEADER*/
+/*STYLE DU HEADER*/
+/*STYLE DU HEADER*/
+/*STYLE DU HEADER*/
 .headerback
 {
 	background-color: #242424;
-	padding: -8px;
 }
 
+.sansmargin 
+{
+	margin: 0px;
+}
+
+.sanspadding 
+{
+	padding: 0px;
+}
+
+.header
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: Bodoni MT;
+	
+}
+
+.header1
+{
+	background-color: black;
+	color: #29ABE2;
+}
+
+.header1size
+{
+	width: 45%;
+}
+
+.divmargin
+{
+	margin-left: 80px;
+}
+
+.buttonsheader
+{
+	border: solid 1px;
+	border-color: #29ABE2; 
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	width: 220px;
+	height: 32px;
+	padding-top: 8px;
+	padding-bottom: 2px;
+}
+
+.searcheader
+{
+	background-color: black;
+	border: solid 1px;
+	border-color: #29ABE2; 
+	color: #29ABE2;
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+	width: 472px;
+	height: 34px;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	margin-left: 16px;
+}
+
+.searchinput
+{
+	background-color: black;
+	border: 0px;
+	outline: none;
+	color: #29ABE2;
+	text-align: left;
+	font-family: Bodoni MT;
+	font-size: 20px;
+	font-weight: bold;
+	width: 400px;
+	height: 28px;
+	padding-left: 20px;
+	
+}
+
+.searchinput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #29ABE2;
+  font-family: Bodoni MT;
+}
+
+.header3
+{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	border: solid 1px;
+	border-color: #29ABE2; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.span
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*STYLE DU BODY*/
+/*STYLE DU BODY*/
+/*STYLE DU BODY*/
+/*STYLE DU BODY*/
 .bodyback
 {
 	background-image: url(http://127.0.0.1/FilRougeWeb/WebFR/Site/Image/fond.jpg);
@@ -13,42 +122,72 @@
 	background-position: center; 
 }
 
+.body1
+{
+	background-color: rgba(172, 172, 172, 0.6);
+	padding-top: 20px;
+	border: solid 2px;
+	border-color: #4D4D4D;
+}
+
+h2
+{
+	text-align: center;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#body1div1
+{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#body1div2
+{
+	text-align: center;
+	color: #4D4D4D;
+	font-size: 20px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.body2
+{
+	background-color: rgba(172, 172, 172, 0.6);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: solid 2px;
+	border-color: #4D4D4D;
+	margin-top: 2px;
+}
+
+.flex-caption
+{
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(75,75,75,0.6);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 0 0 20px 20px;
+}
+
+
+/*STYLE DU FOOTER*/
+/*STYLE DU FOOTER*/
+/*STYLE DU FOOTER*/
+/*STYLE DU FOOTER*/
 .footerback
 {
 	background-color: #242424;
-}
-
-.header
-{
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.header1
-{
-	background-color: black;
-	color: #29ABE2;
-}
-
-#img1
-{
-	width: 550px;
-	height: 175px;
-}
-
-.header2
-{
-	background-color: black;
-	color: white;
-	font-size: 16px;
-	text-align: center;
-	border: solid 1px;
-	border-color: #29ABE2; 
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-span
-{
-	margin-left: 10px;
-	margin-right: 10px;
 }
