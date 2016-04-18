@@ -29,16 +29,24 @@
 {
 	background-color: black;
 	color: #29ABE2;
+	position: right;
 }
 
 .header1size
 {
 	width: 45%;
+
+}
+
+.header2size
+{
+	width: 244px;
+
 }
 
 .divmargin
 {
-	margin-left: 80px;
+	margin-left: 34px;
 }
 
 .buttonsheader
@@ -125,17 +133,21 @@
 .body1
 {
 	background-color: rgba(172, 172, 172, 0.6);
+	margin-top: 6px;
 	padding-top: 20px;
 	border: solid 2px;
+	border-radius: 20px;
 	border-color: #4D4D4D;
 }
 
-h2
+.h2
 {
 	text-align: center;
 	color: white;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
 #body1div1
@@ -143,7 +155,7 @@ h2
 	text-align: center;
 	color: white;
 	font-size: 20px;
-	width: 800px;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -153,7 +165,7 @@ h2
 	text-align: center;
 	color: #4D4D4D;
 	font-size: 20px;
-	width: 800px;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -164,8 +176,9 @@ h2
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border: solid 2px;
+	border-radius: 20px;
 	border-color: #4D4D4D;
-	margin-top: 2px;
+	margin-top: 4px;
 }
 
 .flex-caption
@@ -182,6 +195,67 @@ h2
   border-radius: 0 0 20px 20px;
 }
 
+.flex-caption2
+{
+  width: 90%;
+  height: 14%;
+  padding: 8px;
+  left: 0;
+  bottom: 0;
+  background: rgba(75,75,75,0.6);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+  font-size: 15px;
+  line-height: 18px;
+  border-radius: 0 0 20px 20px;
+}
+
+.divdescrip
+{
+  width: 90%;
+  height: 14%;
+  padding: 8px;
+  left: 0;
+  bottom: 0;
+  background: rgba(75,75,75,0.6);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+  font-size: 15px;
+  line-height: 18px;
+  border-radius: 0 0 20px 20px;
+}
+
+.divproduits
+{
+	width: 96%;
+	height: 28%;
+	background-color: white;
+	border-radius: 20px 20px 0 0;
+	text-align: center;
+}
+
+.produits
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+
+.titre
+{
+	font-weight: bold;
+}
+
+.description
+{
+
+}
+
+.prix
+{
+	color: black;
+	font-weight: bold;
+}
 
 /*STYLE DU FOOTER*/
 /*STYLE DU FOOTER*/
@@ -190,4 +264,37 @@ h2
 .footerback
 {
 	background-color: #242424;
+}
+
+.footer
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: Bodoni MT;	
+}
+
+/*STYLE MARQUES POPULAIRES*/
+/*STYLE MARQUES POPULAIRES*/
+.footer1
+{
+	background-color: #0B0B0B;
+	color: #29ABE2;
+	font-weight: 
+}
+
+.footerlogo
+{
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/*STYLE FIN DE PAGE*/
+/*STYLE FIN DE PAGE*/
+.footer2
+{
+	background-color: #0B0B0B;
+	margin-top: 8px;
 }
