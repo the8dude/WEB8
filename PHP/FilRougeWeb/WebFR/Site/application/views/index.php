@@ -145,7 +145,7 @@
 								</div>
 							      	<p class="flex-caption2">
 							      		<span class="titre">Guitare Electrique Gibson</span><br><span class="description">SG Standard 2016 HP HC</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">2.640 €</span>
 
 							      	</p>
@@ -156,7 +156,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Cordes Guitare Electrique Gibson</span><br><span class="description">Cordes → MEDIUM</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">24 €</span>
 
 							      	</p>
@@ -169,7 +169,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Guitare Electrique Gibson</span><br><span class="description">LP Syudio Fadded 2016 HP SE</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">1.176 €</span>
 
 							      	</p>
@@ -180,7 +180,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Cordes Guitare Electrique Gibson</span><br><span class="description">Cordes → SOFT</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">21,60 €</span>
 
 							      	</p>
@@ -193,7 +193,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Piano Steinway & Sons</span><br><span class="description">Modèle B-211</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">25.500 €</span>
 
 							      	</p>
@@ -204,7 +204,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Banc Piano Andexinger</span><br><span class="description">Bench Lift O Matic</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">600 €</span>
 
 							      	</p>
@@ -217,7 +217,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Saxophone Tampone & Cazzani</span><br><span class="description">Modèle 2006/TV/OTS Two Voices</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">2.880 €</span>
 
 							      	</p>
@@ -228,7 +228,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Anche Forestone</span><br><span class="description">Unfiled Alto Sax M, F3.5</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">30 €</span>
 
 							      	</p>
@@ -241,7 +241,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Guitare Electrique Fender</span><br><span class="description">Road Worn Stratocaster OWT</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">1.260 €</span>
 
 							      	</p>
@@ -252,7 +252,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Cordes Guitare Electrique Fender</span><br><span class="description">250R</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">24 €</span>
 
 							      	</p>
@@ -265,7 +265,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Médiator Dunlop x10</span><br><span class="description">Souples 0.50 mm</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">1,20 €</span>
 
 							      	</p>
@@ -276,7 +276,7 @@
 							    </div>
 							      <p class="flex-caption2">
 							      		<span class="titre">Médiator Dunlop x10</span><br><span class="description">Rigides 1.14 mm</span>
-							      		<br><br>
+							      		<br>
 							      		<span class="prix">1,20 €</span>
 
 							      	</p>
@@ -317,14 +317,64 @@
 		</div>
 
 		<div class="mdl-grid sanspadding">
-	  		<div class="mdl-cell mdl-cell--2-col"></div>
+	  		<div class="mdl-cell mdl-cell--2-col sansmargin"></div>
 	  		<div class="mdl-cell mdl-cell--8-col sansmargin">
 	  			<div class="footer2">
-	  				<div class="mdl-grid">
-					  <div class="mdl-cell mdl-cell--2-col"></div>
-					  <div class="mdl-cell mdl-cell--2-col"></div>
-					  <div class="mdl-cell mdl-cell--2-col"></div>
-					  <div class="mdl-cell mdl-cell--2-col"></div>
+	  				<div class="mdl-grid sanspadding">
+					  <div class="mdl-cell mdl-cell--2-col footercolonne">
+					  	<div>Suivez-nous</div>
+					  	<div class="footerinfos">
+					  		<br>
+					  		<img src="<?=base_url("Icone/social1.png")?>" width="40px" height="40px"/>	Google+
+					  		<br><br>
+					  		<img src="<?=base_url("Icone/social2.png")?>" width="40px" height="40px"/>	Facebook
+					  		<br><br>
+					  		<img src="<?=base_url("Icone/social3.png")?>" width="40px" height="40px"/>	Instagram
+					  		<br><br>
+					  		<img src="<?=base_url("Icone/social4.png")?>" width="40px" height="40px"/>	Twitter
+					  	</div>
+					  </div>
+
+					  <div class="mdl-cell mdl-cell--2-col footercolonne">
+					  	<div>Garanties</div>
+					  	<div class="footerinfos">
+					  		<br>
+					  		<img src="<?=base_url("Icone/money1.png")?>" width="40px" height="40px"/>	Paypal
+					  		<br><br>
+					  		<img src="<?=base_url("Icone/money2.png")?>" width="40px" height="40px"/>	Mastercard
+					  		<br><br>
+					  		<img src="<?=base_url("Icone/money3.png")?>" width="40px" height="40px"/>	Visa
+					  	</div>
+					  </div>
+
+					  <div class="mdl-cell mdl-cell--2-col footercolonne">
+					  	<div>Catalogues</div>
+					  	<div class="footerinfos">
+					  		<br>
+					  		Instruments à cordes
+					  		<br><br>
+					  		Instruments à vent
+					  		<br><br>
+					  		Instruments à percussions
+					  		<br><br>
+					  		Accessoires
+					  	</div>
+					  </div>
+
+					  <div class="mdl-cell mdl-cell--2-col footercolonne">
+					  	<div>Contact</div>
+					  	<div class="footerinfos">
+					  		<br>
+					  		Village Green 
+					  		<br><br>
+					  		<img src="<?=base_url("Icone/map.png")?>" width="40" height="40px"/>	<br>88 rue Rock'n'Roll<br>88 888 MusicLand
+					  		<br><br>
+					  		<img src="<?=base_url("Icone/mail.png")?>" width="40" height="40px"/>	<br>contact@villagegreen.com
+					  		<br><br>
+					  		<img src="<?=base_url("Icone/cellphone.png")?>" width="40" height="40px"/>	<br>08.888.888.88
+					  	</div>
+					  </div>
+					  </div>
 					  
 					</div>
 	  			</div>

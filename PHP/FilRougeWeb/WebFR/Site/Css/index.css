@@ -27,6 +27,7 @@
 
 .header1
 {
+	width: 100%;
 	background-color: black;
 	color: #29ABE2;
 	position: right;
@@ -102,6 +103,7 @@
 
 .header3
 {
+	width: 100%;
 	background-color: black;
 	color: white;
 	font-size: 20px;
@@ -210,25 +212,9 @@
   border-radius: 0 0 20px 20px;
 }
 
-.divdescrip
-{
-  width: 90%;
-  height: 14%;
-  padding: 8px;
-  left: 0;
-  bottom: 0;
-  background: rgba(75,75,75,0.6);
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
-  font-size: 15px;
-  line-height: 18px;
-  border-radius: 0 0 20px 20px;
-}
-
 .divproduits
 {
 	width: 96%;
-	height: 28%;
 	background-color: white;
 	border-radius: 20px 20px 0 0;
 	text-align: center;
@@ -246,10 +232,6 @@
 	font-weight: bold;
 }
 
-.description
-{
-
-}
 
 .prix
 {
@@ -279,7 +261,7 @@
 {
 	background-color: #0B0B0B;
 	color: #29ABE2;
-	font-weight: 
+	font-family: Bodoni MT;
 }
 
 .footerlogo
@@ -297,4 +279,22 @@
 {
 	background-color: #0B0B0B;
 	margin-top: 8px;
+}
+
+.footercolonne
+{
+	width: 22%;
+	padding-top: 20px;
+	padding-left: 60px;
+	color: #29ABE2;
+	font-size: 28px;
+	font-family: Bodoni MT;
+}
+
+.footerinfos
+{
+	padding-top: 20px;
+	color: white;
+	font-size: 20px;
+	font-family: Bodoni MT;
 }
