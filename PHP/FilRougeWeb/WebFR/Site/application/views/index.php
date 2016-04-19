@@ -36,29 +36,21 @@
 
 	  				<div class="mdl-grid">
 
-					  	<div class="mdl-cell mdl-cell--4-col header1size sansmargin">
-					  		<div class="header1size sansmargin">
-					  			<img src="<?=base_url("Image/logo2.png")?>" height="120px" width="450px">
-					  		</div>					  
+					  	<div class="mdl-cell mdl-cell--4-col sansmargin">
+					  		<img src="<?=base_url("Image/logo2.png")?>" id="logo">					  							  
 					  	</div>
 
 
-						<div class="mdl-cell mdl-cell--4-col header1size divmargin">
-
-							<div class="mdl-grid">
-							  	<div class="mdl-cell mdl-cell--2-col header2size">
-							  		<div class="buttonsheader">Se Connecter <img src="<?=base_url("Icone/web.png")?>" height="28px" width="28px"></div>
-							  	</div>
-
-							  	<div class="mdl-cell mdl-cell--2-col header2size">
-							  		<div class="buttonsheader">Panier <img src="<?=base_url("Icone/commerce.png")?>" height="28px" width="28px"></div>
-							  	</div>
-							</div>
-
-							<div class="searcheader">
-								<input type="text" class="searchinput" placeholder="Rechercher un produit . . ."/> <img src="<?=base_url("Icone/search.png")?>" height="28px" width="28px">
-							</div>
-			  				
+						<div class="mdl-cell mdl-cell--4-col header1size">
+							  	
+					  		<div class="header2size">
+					  			<div class="buttonsheader">Se Connecter <img src="<?=base_url("Icone/web.png")?>" height="28px" width="28px"></div>
+						  		<div class="buttonsheader">Panier <img src="<?=base_url("Icone/commerce.png")?>" height="28px" width="28px"></div>
+							  	<div class="searcheader">
+									<input type="text" class="searchinput" placeholder="Rechercher un produit"/> <img src="<?=base_url("Icone/search.png")?>" height="28px" width="28px">
+								</div>
+					  		</div>
+	  					
 	  					</div>
 
 					</div>
@@ -294,7 +286,10 @@
 
 
 
-
+	<!-- CODE DU FOOTER LOGOS MARQUES + INFOS -->
+	<!-- CODE DU FOOTER LOGOS MARQUES + INFOS -->
+	<!-- CODE DU FOOTER LOGOS MARQUES + INFOS -->
+	<!-- CODE DU FOOTER LOGOS MARQUES + INFOS -->
 	<div class="footerback">
 		<div class="mdl-grid sanspadding">
 	  		<div class="mdl-cell mdl-cell--2-col sansmargin"></div>
@@ -322,18 +317,19 @@
 	  			<div class="footer2">
 	  				<div class="mdl-grid sanspadding">
 					  <div class="mdl-cell mdl-cell--2-col footercolonne">
-					  	<div>Suivez-nous</div>
-					  	<div class="footerinfos">
-					  		<br>
-					  		<img src="<?=base_url("Icone/social1.png")?>" width="40px" height="40px"/>	Google+
-					  		<br><br>
-					  		<img src="<?=base_url("Icone/social2.png")?>" width="40px" height="40px"/>	Facebook
-					  		<br><br>
-					  		<img src="<?=base_url("Icone/social3.png")?>" width="40px" height="40px"/>	Instagram
-					  		<br><br>
-					  		<img src="<?=base_url("Icone/social4.png")?>" width="40px" height="40px"/>	Twitter
+					  	<div>Contact</div>
+						  	<div class="footerinfos">
+						  		<br>
+						  		Village Green 
+						  		<br><br>
+						  		<img src="<?=base_url("Icone/map.png")?>" width="40" height="40px"/>	<br>88 rue Rock'n'Roll<br>88 888 MusicLand
+						  		<br><br>
+						  		<img src="<?=base_url("Icone/cellphone.png")?>" width="40" height="40px"/>	<br>08.888.888.88
+						  		<br><br>
+						  		<img src="<?=base_url("Icone/mail.png")?>" width="40" height="40px"/>	<br>contact@villagegreen.com
+						  		<br><br><br><br>
+						  	</div>
 					  	</div>
-					  </div>
 
 					  <div class="mdl-cell mdl-cell--2-col footercolonne">
 					  	<div>Garanties</div>
@@ -362,18 +358,27 @@
 					  </div>
 
 					  <div class="mdl-cell mdl-cell--2-col footercolonne">
-					  	<div>Contact</div>
-					  	<div class="footerinfos">
-					  		<br>
-					  		Village Green 
-					  		<br><br>
-					  		<img src="<?=base_url("Icone/map.png")?>" width="40" height="40px"/>	<br>88 rue Rock'n'Roll<br>88 888 MusicLand
-					  		<br><br>
-					  		<img src="<?=base_url("Icone/mail.png")?>" width="40" height="40px"/>	<br>contact@villagegreen.com
-					  		<br><br>
-					  		<img src="<?=base_url("Icone/cellphone.png")?>" width="40" height="40px"/>	<br>08.888.888.88
+					  	<div>Suivez-nous</div>
+						  	<div class="footerinfos">
+						  		<br>
+						  		<img src="<?=base_url("Icone/social1.png")?>" width="40px" height="40px"/>	Google+
+						  		<br><br>
+						  		<img src="<?=base_url("Icone/social2.png")?>" width="40px" height="40px"/>	Facebook
+						  		<br><br>
+						  		<img src="<?=base_url("Icone/social3.png")?>" width="40px" height="40px"/>	Instagram
+						  		<br><br>
+						  		<img src="<?=base_url("Icone/social4.png")?>" width="40px" height="40px"/>	Twitter
+						  		<br><br>
+						  		<br><br>
+						  		<br><br>
+						  		<br><br>
+						  		<br><br>
+						  		<br><br>
+						  		<div class="private"><i class="material-icons">https</i>Accès Commercial</div>
+						  		<br><br>
+						  		<br><br>
+						  	</div>
 					  	</div>
-					  </div>
 					  </div>
 					  
 					</div>

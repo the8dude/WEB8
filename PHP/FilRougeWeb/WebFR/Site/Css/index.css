@@ -2,127 +2,243 @@
 /*STYLE DU HEADER*/
 /*STYLE DU HEADER*/
 /*STYLE DU HEADER*/
-.headerback
-{
-	background-color: #242424;
-}
 
-.sansmargin 
-{
-	margin: 0px;
-}
 
-.sanspadding 
-{
-	padding: 0px;
-}
+	.headerback
+	{
+		background-color: #242424;
+	}
 
-.header
-{
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-family: Bodoni MT;
+	.sansmargin 
+	{
+		margin: 0px;
+	}
+
+	.sanspadding 
+	{
+		padding: 0px;
+	}
+
+	.header
+	{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-family: "Helvetica", sans-serif;
+		
+	}
+	#logo
+	{
+		height: 180px;
+		width: 400px;
+	}
+
+	.header1
+	{
+		width: 100%;
+		background-color: black;
+		color: #29ABE2;
+	}
+
+	.header1size
+	{
+		width: 65%;
+	}
+
+	.header2size
+	{
+		float: right;
+	}
 	
+@media screen and (max-width: 1100px)
+{
+	#logo
+	{
+		height: 135px;
+		width: 300px;
+		margin-top: 16;
+	}
 }
 
-.header1
+@media screen and (max-width: 925px)
 {
-	width: 100%;
-	background-color: black;
-	color: #29ABE2;
-	position: right;
+	#logo
+	{
+		height: 108px;
+		width: 240px;
+		margin-top: 32;
+	}
 }
 
-.header1size
+@media screen and (max-width: 839px)
 {
-	width: 45%;
+	#logo
+	{
+		height: 162px;
+		width: 350px;
+		margin-top: 20;
+	}
+
+	.header1size
+	{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 675px)
+{
+	#logo
+	{
+		height: 135px;
+		width: 300px;
+		margin-top: 20;
+	}
+
+	.header1size
+	{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 625px)
+{
+	#logo
+	{
+		height: 112px;
+		width: 250px;
+		margin-top: 24;
+	}
+
+	.header1size
+	{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 560px)
+{
+	#logo
+	{
+		height: 180px;
+		width: 400px;
+	}
+
+	.header1size
+	{
+		width: 100%;
+		margin: 10px;
+	}
+
+	.header2size
+	{
+		width: 100%;
+		float: left;
+	}
 
 }
 
-.header2size
+@media screen and (max-width: 479px)
 {
-	width: 244px;
+	#logo
+	{
+		height: 158px;
+		width: 350px;
+	}
 
+	.header1size
+	{
+		width: 50%;
+	}
+
+	.header2size
+	{
+		width: 100%;
+		float: left;
+	}
 }
 
-.divmargin
-{
-	margin-left: 34px;
-}
 
-.buttonsheader
-{
-	border: solid 1px;
-	border-color: #29ABE2; 
-	text-align: center;
-	font-size: 22px;
-	font-weight: bold;
-	width: 220px;
-	height: 32px;
-	padding-top: 8px;
-	padding-bottom: 2px;
-}
 
-.searcheader
-{
-	background-color: black;
-	border: solid 1px;
-	border-color: #29ABE2; 
-	color: #29ABE2;
-	text-align: left;
-	font-size: 18px;
-	font-weight: bold;
-	width: 472px;
-	height: 34px;
-	padding-top: 8px;
-	padding-bottom: 4px;
-	padding-left: 8px;
-	margin-left: 16px;
-}
 
-.searchinput
-{
-	background-color: black;
-	border: 0px;
-	outline: none;
-	color: #29ABE2;
-	text-align: left;
-	font-family: Bodoni MT;
-	font-size: 20px;
-	font-weight: bold;
-	width: 400px;
-	height: 28px;
-	padding-left: 20px;
+
+	.buttonsheader
+	{
+		border: solid 1px;
+		border-color: #29ABE2; 
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		width: 280px;
+		height: 32px;
+		padding-top: 8px;
+		padding-bottom: 2px;
+		margin-bottom: 8px;
+	}
+
+	.searcheader
+	{
+		background-color: black;
+		border: solid 1px;
+		border-color: #29ABE2; 
+		color: #29ABE2;
+		text-align: left;
+		font-size: 16px;
+		font-weight: bold;
+		width: 272px;
+		height: 34px;
+		padding-top: 8px;
+		padding-bottom: 4px;
+		padding-left: 8px;
+	}
+
+	.searchinput
+	{
+		background-color: black;
+		border: 0px;
+		outline: none;
+		color: #29ABE2;
+		text-align: left;
+		font-family: "Helvetica", sans-serif;
+		font-size: 17px;
+		font-weight: bold;
+		width: 200px;
+		height: 28px;
+		padding-left: 4px;
+		
+	}
+
+	.searchinput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #29ABE2;
+	  font-family: "Helvetica", sans-serif;
+	}
+
+	.header3
+	{
+		width: 100%;
+		background-color: black;
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		border: solid 1px;
+		border-color: #29ABE2; 
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.span
+	{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
 	
-}
-
-.searchinput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #29ABE2;
-  font-family: Bodoni MT;
-}
-
-.header3
+/*STYLE DU BODY*/
+/*STYLE DU BODY*/
+/*STYLE DU BODY*/
+/*STYLE DU BODY*/
+body 
 {
-	width: 100%;
-	background-color: black;
-	color: white;
-	font-size: 20px;
-	text-align: center;
-	border: solid 1px;
-	border-color: #29ABE2; 
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-.span
-{
-	margin-left: 10px;
-	margin-right: 10px;
+	min-width:400px;
 }
 
-/*STYLE DU BODY*/
-/*STYLE DU BODY*/
-/*STYLE DU BODY*/
-/*STYLE DU BODY*/
 .bodyback
 {
 	background-image: url(http://127.0.0.1/FilRougeWeb/WebFR/Site/Image/fond.jpg);
@@ -130,6 +246,8 @@
 	/*background-attachment: fixed;*/
 	background-repeat: no-repeat;
 	background-position: center; 
+	
+
 }
 
 .body1
@@ -252,7 +370,7 @@
 {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-family: Bodoni MT;	
+	font-family: "Helvetica", sans-serif;	
 }
 
 /*STYLE MARQUES POPULAIRES*/
@@ -261,7 +379,7 @@
 {
 	background-color: #0B0B0B;
 	color: #29ABE2;
-	font-family: Bodoni MT;
+	font-family: "Helvetica", sans-serif;
 }
 
 .footerlogo
@@ -283,18 +401,39 @@
 
 .footercolonne
 {
-	width: 22%;
+	width: 20%;
+	margin-left: 40px;
 	padding-top: 20px;
-	padding-left: 60px;
+	padding-left: 40px;
 	color: #29ABE2;
-	font-size: 28px;
-	font-family: Bodoni MT;
+	font-size: 22px;
+	font-family: "Helvetica", sans-serif;
+}
+
+@media screen and (max-width: 1475px)
+{
+	.footercolonne
+	{
+		margin-left: 10px;
+	}
+}
+@media screen and (max-width: 625px)
+{
+	.footercolonne
+	{
+		width: 40%;
+	}
 }
 
 .footerinfos
 {
 	padding-top: 20px;
 	color: white;
-	font-size: 20px;
-	font-family: Bodoni MT;
+	font-size: 16px;
+	font-family: "Helvetica", sans-serif;
+}
+
+.private
+{
+	float: left;
 }
