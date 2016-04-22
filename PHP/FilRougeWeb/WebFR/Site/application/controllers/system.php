@@ -3,37 +3,108 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class System extends CI_Controller 
 {
-	 public function index()
+	public function index()
     {
         $this->load->helper('url');
         $this->load->view('index');
     }
 
+    public function confirm()
+    {
+        $this->load->helper('url');
+        $this->load->view('confirm');
+    }
 
+    public function contact()
+    {
+        $this->load->helper('url');
+        if ($this->input->server('REQUEST_METHOD') == 'GET') {
+            $this->load->view('contact');
+        }
+        else if ($this->input->server('REQUEST_METHOD') == 'POST') {
+            // $this->load->library('email');
+             
+            // //$this->email->Nom($this->input->post("nom")); 
+            // //$this->email->Prenom($this->input->post("prenom")); 
+            // $this->email->from($this->input->post("email"));
+            // $this->email->to('dumontderek@gmail.com');
+            // $this->email->subject('Email Test');
+            // $this->email->message($this->input->post('Vous avez reçu un message de "message"'));
+            // $this->email->->set_mailtype('html');
 
+            // $this->email->send();
 
+            $this->load->view('confirm');
+        }
+    }
 
+    public function commercial()
+    {
+        $this->load->helper('url');
+        $this->load->view('commercial');
+    }
 
+    public function comliste()
+    {
+        $this->load->database();
+        $this->load->helper('url');
 
+        $choix = $this->input->get("choix");
 
+        if ($choix) {
+            if ($choix!="all") 
+            {
+                $model["liste"] = $this->db->query("select * from article where IdSousRubrique='$choix'")->result();
+            }
+            else
+            {
+                $model["liste"] = $this->db->query("select * from article")->result();    
+            }
+        }
+        else {
+            $model["liste"] = array();
+        }
+        
+        $this->load->view('comliste', $model);
+    }
 
+    public function comdetails($id)
+    {
+        $this->load->database();
+        $this->load->helper('url');
+        
+        $liste = $this->db->query("select * from article where RefArticle= ?", array($id));
+        $model["ligne"] = $liste->row(); // premiÃ¨re ligne du rÃ©sultat
+        $this->load->view('comdetails', $model);
+    }
 
+    public function script_supprimer($id)
+    {
+            $this->load->database();
 
+            $this->db->query("delete from liens where RefArticle= ?", array($id));
+            
+            $this->load->helper('url');
+            redirect(site_url("system/comliste"));
+    }
 
+    public function ajout()
+    {
+        $this->load->helper('url');
+        $this->load->view('ajout');     
+    }
 
+    public function script_ajout()
+        {
+            $data = $this->input->post();
 
+            $this->load->database();
+            $str = $this->db->insert_string('article', $data);
+            $this->db->query($str);
 
-
-
-
-
-
-
-
-
-
-
-
+            $this->load->helper('url');
+            redirect(site_url("system/comliste"));
+        }
 
 }
 ?>

@@ -58,12 +58,12 @@
 	  			</div>
 
 	  			<div class="header3">
-	  				<span class="span">Instruments à cordes</span>
-	  				<span class="span">Instruments à vent</span>
-	  				<span class="span">Instruments à percussions</span>
-	  				<span class="span">Accessoires</span>
-	  				<span class="span">Contact</span>
-	  				
+	  				<button class="span buttonnav"><a href="<?=site_url("System/index")?>" class="hypertexte" id="accueil">Accueil</a></button>
+	  				<button class="span buttonnav">Percussions</button>
+	  				<button class="span buttonnav">Cordes</button>
+	  				<button class="span buttonnav">Vent</button>	  				
+	  				<button class="span buttonnav">Accessoires</button>		
+	  				<button class="span buttonnav"><a href="<?=site_url("System/contact")?>" class="hypertexte" id="contact">Contact</a></button>
 	  			</div>
 
 	  		</div>
@@ -101,26 +101,18 @@
 	  			<!-- CODE DU BODY GRAND CAROUSEL -->
 
 	  			<div class="body2">
-
+	  					<br><br>
 	  					<div class="flexslider carousel">
-						  <ul class="slides">
-						    <li>
-						      <img src="<?=base_url("Image/gibson.jpg")?>" height="262px" width="330px" />
-						      <p class="flex-caption">→ Guitare Electrique Gibson</p>
-						    </li>
-						    <li>
-						      <img src="<?=base_url("Image/fender.jpg")?>" height="262px" width="330px" />
-						      <p class="flex-caption">→ Guitare Electrique Fender</p>
-						    </li>
-						    <!-- <li>
-						      <img src="<?=base_url("Image/logo2.png")?>" />
-						      <p class="flex-caption">Adventurer Donut</p>
-						    </li>
-						    <li>
-						      <img src="<?=base_url("Image/logo2.png")?>" />
-						      <p class="flex-caption">Adventurer Caramel</p>
-						    </li> -->
-						  </ul>
+						  	<ul class="slides">
+							    <li>
+							      <img src="<?=base_url("Image/gibson.jpg")?>" height="262px" width="330px" />
+							      <p class="flex-caption">→ Guitare Electrique Gibson</p>
+							    </li>
+							    <li>
+							      <img src="<?=base_url("Image/fender.jpg")?>" height="262px" width="330px" />
+							      <p class="flex-caption">→ Guitare Electrique Fender</p>
+							    </li>
+					    	</ul>
 						</div>
 
 	  			</div>
@@ -300,9 +292,9 @@
 	  						<h1>Marques Populaires</h1>
 	  					</div>
 	  					<span><img src="<?=base_url("Image/marques/andexinger.jpg")?>" width="234px" height="60px"/></span>
-	  					<span><img src="<?=base_url("Image/marques/fender.jpg")?>" /></span>
-	  					<span><img src="<?=base_url("Image/marques/forestone.jpg")?>" width="262px" height="60px"/></span>
 	  					<span><img src="<?=base_url("Image/marques/gibson.jpg")?>" /></span>
+	  					<span><img src="<?=base_url("Image/marques/forestone.jpg")?>" width="262px" height="60px"/></span><br><br>
+	  					<span><img src="<?=base_url("Image/marques/fender.jpg")?>" width="165px" height="60px"/></span>
 	  					<span><img src="<?=base_url("Image/marques/rampone.jpg")?>" width="262px" height="60px"/></span>
 	  					<span><img src="<?=base_url("Image/marques/steinway.jpg")?>" width="164px" height="60px"/></span>
 	  				</div>
@@ -374,7 +366,7 @@
 						  		<br><br>
 						  		<br><br>
 						  		<br><br>
-						  		<div class="private"><i class="material-icons">https</i>Accès Commercial</div>
+						  		<a href="<?=site_url("System/commercial")?>" class="hypertextefooter"><div class="private"><i class="material-icons">https</i>Accès Commercial</div></a>
 						  		<br><br>
 						  		<br><br>
 						  	</div>

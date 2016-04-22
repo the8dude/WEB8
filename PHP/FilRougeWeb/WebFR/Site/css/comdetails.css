@@ -1,0 +1,58 @@
+.bodydetails
+{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 6px;
+	border: solid 2px;
+	border-radius: 20px;
+	border-color: #4D4D4D;
+	
+}
+
+.tabledetails
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.label
+{
+	color: #29ABE2;
+}
+
+.texte2
+{
+	color: white;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+.btn2
+{
+	margin-left: 40px;
+	background-color: black;
+	border-radius: 10px;
+	border: solid 2px;
+	border-color: #29ABE2; 
+	text-align: center;	
+	color: #29ABE2;
+	overflow: hidden;
+	padding-bottom: 36px;
+}
+
+.picdetails
+{
+	width: 50%
+
+
+}
+
+.retourcentrage
+{
+	text-align: right;
+	padding-right: 20px;
+}

@@ -34,7 +34,7 @@ class Liens extends CI_Controller
 		
 		$liste = $this->db->query("select * from liens where id= ?", array($id));
     		$model["ligne"] = $liste->row(); // premiÃ¨re ligne du rÃ©sultat
-		$model["titre"] = "DÃ©tails";
+		$model["titre"] = "Détails";
 		$this->load->view('details', $model);
 	}
 
@@ -92,23 +92,6 @@ class Liens extends CI_Controller
         	redirect(site_url("liens/liste"));
     	}
 
-	public function guillemet()
-    	{
-    		$data = $this->input->post();
-        	$titre = $this->input->post("titre");
-        	$description = $this->input->post("description");
-        	$url = $this->input->post("url");
-        	$webmaster = $this->input->post("webmaster");
-
-        	for ($i=0; $i < input.lenght ; $i++) 
-		{ 
-        	
-        		if ($i == '"')
-        		{
-        			$i = &quot; ;
-        		}
-        	}
-        
-    	}
+	
 }
 ?>

@@ -1,0 +1,129 @@
+/*CSS ACCUEIL TDB*/
+#tdb
+{
+	margin-left: 200px;
+	color: white;
+	font-size: 16px;
+	font-family: "Helvetica", sans-serif;
+}
+
+/*CSS COM LISTE*/
+.bodyliste
+{
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 6px;
+	border: solid 2px;
+	border-radius: 20px;
+	border-color: #4D4D4D;
+	width: 100%;
+}
+
+#centrage
+{
+	margin-left: auto;
+
+}
+.select
+{
+	margin: 20px;
+	padding-left: 20px;
+	width: 320px;
+	height: 40px;
+	color: #29ABE2;
+	background-color: black;
+	border: solid 2px;
+	border-color: #29ABE2;;
+	border-radius: 10px;
+	outline: none;
+	resize: none;
+}
+
+.submit
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	border-radius: 10px;
+	border: solid 2px;
+	border-color: #29ABE2; 
+	text-align: center;	
+	color: #29ABE2;
+	overflow: hidden;
+	outline: none;
+	width: 120px;
+	height: 40px;
+	
+}
+
+.picsize
+{
+	width: 60px;
+	height: 60px;
+	opacity: 0.8;
+    border-radius: 10px;
+}
+
+.tableliste
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 20px;
+	overflow: hidden;
+	padding-left: 10px;
+}
+
+.btn
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	border-radius: 10px;
+	border: solid 2px;
+	border-color: #29ABE2; 
+	text-align: center;	
+	color: #29ABE2;
+	overflow: hidden;
+	padding-bottom: 36px;
+}
+
+#photo
+{
+	padding-left: 8px;
+}
+
+.stock
+{
+	text-align: right;
+	padding-right: 60px;
+}
+
+.titre
+{
+	color: #29ABE2;
+	font-size: 16px;
+	font-family: "Helvetica", sans-serif;
+}
+
+.texte
+{
+	color: white;
+	font-weight: bold;
+}
+
+.btnajout
+{
+	margin-left: 20px;
+	margin-bottom: 16px;
+	background-color: black;
+	border-radius: 10px;
+	border: solid 2px;
+	border-color: #29ABE2; 
+	text-align: center;	
+	color: #29ABE2;
+	overflow: hidden;
+	padding-bottom: 36px;
+	width: 120px;
+}
+
