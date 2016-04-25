@@ -11,7 +11,7 @@
 	<!-- CSS Perso -->
 	<link rel="stylesheet" href="<?=base_url("css/index.css")?>" />
 	<link rel="stylesheet" href="<?=base_url("css/comliste.css")?>" />
-	<link rel="stylesheet" href="<?=base_url("css/comdetails.css")?>" />
+	<link rel="stylesheet" href="<?=base_url("css/login.css")?>" />
 	<!-- JS jQuery -->
 	<script src="<?=base_url("jscript/jquery.js")?>"></script>
 	
@@ -61,7 +61,7 @@
 	  				<button class="span buttonnav">Fournisseurs</button>
 	  				<button class="span buttonnav">Rubriques</button>
 	  				<button class="span buttonnav">Sous Rubriques</button>
-	  				<button class="span buttonnav"><a href="<?=site_url("System/comliste")?>" class="hypertexte" id="accueil">Produits</a></button>
+	  				<button class="span buttonnav"><a href="<?=site_url("System/comliste")?>" class="hypertexte" id="produits">Produits</a></button>
 	  				<button class="span buttonnav"><a href="<?=site_url("client/index")?>" class="hypertexte" id="contact">TDB</a></button>
 	  			</div>
 
@@ -82,118 +82,27 @@
 	  		<div class="mdl-cell mdl-cell--2-col sansmargin"></div>
 	  		<div class="mdl-cell mdl-cell--8-col sansmargin">
 	  			
-	  			<div class="bodydetails">
+	  			<div class="bodyliste">
 
-	  			
-	  		<table class="mdl-shadow--2dp  mdl-js-data-table tabledetails">
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Photo Produit</div>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<br><img src="<?= base_url($ligne->PhotoArticle) ?>" class="picdetails"/>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<br><div class="texte2">Référence Produit</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<br><div class="label"><?=$ligne->RefArticle?></div><br>
-						</td>
-					</tr>				
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Produit</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?=$ligne->AppelationArticle?></div><br>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Caractéristiques</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?= $ligne->CaracteristiqueArticle ?></div><br>
-						</td>
-					</tr>	
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">PV TTC</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?= $ligne->PUHTArticle*1.20 ?> €</div><br>
-						</td>
-					</tr>	
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Quantité en stock</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?=$ligne->QteStockArticle?></div><br>
-						</td>
-					</tr>	
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Sous Rubrique</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?=$ligne->IdSousRubrique?></div><br>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Fournisseur</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?=$ligne->IDFournisseur?></div><br>
-						</td>
-					</tr>
-
-					<tr>						
-						<td>							
-						</td>
-
-						<td class="mdl-data-table__cell--non-numeric">
-							
-							<a href="<?= site_url("system/modifier/".$ligne->RefArticle) ?>" class="hypertexte">
-								<button class="mdl-button mdl-js-button mdl-button--raised btn2">
-									MODIFIER 
-								</button>							
-							</a>
-								
-
-								
-							<a href="<?= site_url("system/script_supprimer/".$ligne->RefArticle) ?>" class="hypertexte">
-								<button class="mdl-button mdl-js-button mdl-button--raised btn2">
-									SUPPRIMER
-								</button>
-							</a>
-								
-						</td>
+	  				<div class="sans margin h2">
+	  					<h2>Tableau de bord commercial</h2>
+	  				</div>	
+	  				<br>
+					<div id="tdb">
+						A partir de ce tableau de bord, vous pouvez gérer avec les boutons ci-dessus les :<br><br>
+						→ Fournisseurs<br>
+						→ Rubriques<br>
+						→ Sous Rubriques<br>
+						→ Produits<br>
+						<br><br>
 						
-					</tr>	
-					<tr>
-						<td>							
-						</td>
-						<td>
-							<br>
-							<div class="retourcentrage"><a href="<?=site_url("System/comliste")?>" class="hypertexte">Retour à la liste</a></div>
-							<br>							
-						</td>
-						
-					</tr>	
+					</div>
 
-			</table>
-	  				
+	  				<div class="disconnect">
+	  					<button class="buttondisconnect"><a href="<?=site_url("utilisateur/logout")?>" class="hypertexte">DECONNEXION</a></button>
+	  				</div>
+
+	  				<br><br>
 
 	  			</div>
 

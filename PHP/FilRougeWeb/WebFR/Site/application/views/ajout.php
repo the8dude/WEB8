@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="<?=base_url("css/index.css")?>" />
 	<link rel="stylesheet" href="<?=base_url("css/comliste.css")?>" />
 	<link rel="stylesheet" href="<?=base_url("css/comdetails.css")?>" />
+	<link rel="stylesheet" href="<?=base_url("css/ajout.css")?>" />
 	<!-- JS jQuery -->
 	<script src="<?=base_url("jscript/jquery.js")?>"></script>
 	
@@ -62,7 +63,7 @@
 	  				<button class="span buttonnav">Rubriques</button>
 	  				<button class="span buttonnav">Sous Rubriques</button>
 	  				<button class="span buttonnav"><a href="<?=site_url("System/comliste")?>" class="hypertexte" id="accueil">Produits</a></button>
-	  				<button class="span buttonnav"><a href="<?=site_url("System/commercial")?>" class="hypertexte" id="contact">TDB</a></button>
+	  				<button class="span buttonnav"><a href="<?=site_url("client/index")?>" class="hypertexte" id="contact">TDB</a></button>
 	  			</div>
 
 	  		</div>
@@ -83,69 +84,105 @@
 	  		<div class="mdl-cell mdl-cell--8-col sansmargin">
 	  			
 	  			<div class="bodydetails">
-				
-	  				<form method="post" action="<?=site_url("liens/script_ajout")?>" id="form1">
 
-				        <div class="label">Titre</div>
-				        <div><input class="textBox" type="text" name="titre" id="titre" placeholder="Entrez le titre"/></div>
-				        <br>
+	  		<table class="mdl-shadow--2dp  mdl-js-data-table tableajout">
+	  				<form method="post" action="<?=site_url("system/script_ajout")?>" id="form3">
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<!-- <br><img src="<?= base_url($ligne->PhotoArticle) ?>" class="picdetails"/> -->
+							<input type="texte" name="PhotoArticle" class="inputajout" placeholder="Photo de l'article"/>
+						</td>
+					</tr>
+	
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="texte" name="AppelationArticle" class="inputajout" placeholder="Appelation de l'article"/>
+							<!-- <div class="label"><?=$ligne->AppelationArticle?></div><br> -->
+						</td>
+					</tr>
 
-				        <div class="label">Description</div>
-				        <div><textarea class="textArea" name="description"  id="description" placeholder="Description du site"></textarea></div>
-				        <br>
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<textarea type="texte" name="CaracteristiqueArticle" placeholder="Caractéristiques de l'article" class="textarea-ajout" id="message"></textarea>
+							<!-- <div class="label"><?= $ligne->CaracteristiqueArticle ?></div><br> -->
+						</td>
+					</tr>	
 
-				        <div class="label">URL</div>
-				        <div><input class="textBox" type="text" name="url" id="url" placeholder="Entrez l'adresse URL du site"/></div>
-				        <br>
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="texte" name="PUHTArticle" class="inputajout" placeholder="Prix de vente hors taxe"/>
+							<!-- <div class="label"><?= $ligne->PUHTArticle ?> €</div><br> -->
+						</td>
+					</tr>	
 
-				        <div class="label">Thème</div>
-				        <div>
-				          <select name="choix" class="select" id="choix">
-					  			<option value="Choisissez">Choisissez</option>
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="texte" name="QteStockArticle" class="inputajout" placeholder="Quantité en stock"/>
+							<!-- <div class="label"><?=$ligne->QteStockArticle?></div><br> -->
+						</td>
+					</tr>	
+
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<select name="IdSousRubrique" class="selectajout" id="souscategorie">
+					  			<option value="Choisissez la sous-rubrique">Choisissez la sous-rubrique</option>
 					  			<option value="" disabled></option>
 								<option value="all">TOUS LES PRODUITS</option>
 					  			<option value="" disabled></option>
-					  			<option value="" >Instruments à cordes</option>
-					  			<option value="1110"> → Cordes pincées</option>
-					  			<option value="1120"> → Cordes frappées</option>
-					  			<option value="1130"> → Cordes frottées</option>
+					  			<option value="" >1100 Instruments à cordes</option>
+					  			<option value="1110"> → 1110 Cordes pincées</option>
+					  			<option value="1120"> → 1120 Cordes frappées</option>
+					  			<option value="1130"> → 1130 Cordes frottées</option>
 					  			<option value="" disabled></option>
-					  			<option value="">Instruments à vent</option>
-					  			<option value="1210"> → Vent biseau</option>
-					  			<option value="1220"> → Vent anche</option>
-					  			<option value="1230"> → Vent cuivres</option>
+					  			<option value="">1200 Instruments à vent</option>
+					  			<option value="1210"> → 1210 Vent biseau</option>
+					  			<option value="1220"> → 1220 Vent anche</option>
+					  			<option value="1230"> → 1230 Vent cuivres</option>
 					  			<option value="" disabled></option>
-								<option value="" >Instruments à percussions</option>
-								<option value="1310"> → Percussions clavier</option>
-								<option value="1320"> → Percussions peaux</option>
+								<option value="" >1300 Instruments à percussions</option>
+								<option value="1310"> → 1310 Percussions clavier</option>
+								<option value="1320"> → 1320 Percussions peaux</option>
 								<option value="" disabled></option>
-								<option value="" >Accessoires</option>
-								<option value="2010"> → Accessoires instruments à cordes</option>
-								<option value="2020"> → Accessoires instruments à vent</option>
-								<option value="2030"> → Accessoires instruments à percussions</option>
-							</select>
-				        <br>
+								<option value="" >2000 Accessoires</option>
+								<option value="2010"> → 2010 Accessoires instruments à cordes</option>
+								<option value="2020"> → 2020 Accessoires instruments à vent</option>
+								<option value="2030"> → 2030 Accessoires instruments à percussions</option>
+								
+								
+					  		</select>
+							<!-- <div class="label"><?=$ligne->IdSousRubrique?></div><br> -->
+						</td>
+					</tr>
 
-				        <div class="label">Webmaster</div>
-				        <div><input class="textBox" type="text" name="webmaster" id="webmaster" placeholder="Entrez une adresse mail"/></div>
-				        <br>
+					<tr>
+						<td class="mdl-data-table__cell--non-numeric">
+							<select name="IDFournisseur" class="selectajout" id="fournisseur">
+					  			<option value="Choisissez le fournisseur">Choisissez le fournisseur</option>
+					  			<option value="123">Guitare&Co</option>
+					  			<option value="234">Piano&Co</option>
+								<option value="345">Cuivre&Co</option>
+					  		</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="submit" value="Ajouter" class="buttonadd" id="submit" />
+			  				<input type="reset" value="Effacer" class="buttonadd" id="reset" /><br><br>
+						</td>
+					</tr>
+					</form>	
+						
+			</table>
 
-				        <div>
-				          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-				          <input type="hidden" name="affichage"  value="non" >  
-				          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" name="affichage"  value="oui" />
-				          <span class="mdl-checkbox__label label">Visible</span>
-				          </label>        
-				        </div>
-				        <br>
+	  				
 
-				        <div>
-				          <button type="submit" class="mdl-button mdl-js-button mdl-button--raised btn">VALIDER</button>
-				        </div>
-				        
-				    </form>
-
-				</div>
+	  			</div>
 
 
 
@@ -244,7 +281,7 @@
 						  		<br><br>
 						  		<br><br>
 						  		<br><br>
-						  		<a href="<?=site_url("System/commercial")?>" class="hypertextefooter"><div class="private"><i class="material-icons">https</i>Accès Commercial</div></a>
+						  		<a href="<?=site_url("client/index")?>" class="hypertextefooter"><div class="private"><i class="material-icons">https</i>Accès Commercial</div></a>
 						  		<br><br>
 						  		<br><br>
 						  	</div>

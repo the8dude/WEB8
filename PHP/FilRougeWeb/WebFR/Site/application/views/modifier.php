@@ -11,6 +11,8 @@
 	<!-- CSS Perso -->
 	<link rel="stylesheet" href="<?=base_url("css/index.css")?>" />
 	<link rel="stylesheet" href="<?=base_url("css/comliste.css")?>" />
+	<link rel="stylesheet" href="<?=base_url("css/comdetails.css")?>" />
+	<link rel="stylesheet" href="<?=base_url("css/ajout.css")?>" />
 	<!-- JS jQuery -->
 	<script src="<?=base_url("jscript/jquery.js")?>"></script>
 	
@@ -61,7 +63,7 @@
 	  				<button class="span buttonnav">Rubriques</button>
 	  				<button class="span buttonnav">Sous Rubriques</button>
 	  				<button class="span buttonnav"><a href="<?=site_url("System/comliste")?>" class="hypertexte" id="accueil">Produits</a></button>
-	  				<button class="span buttonnav"><a href="<?=site_url("System/commercial")?>" class="hypertexte" id="contact">TDB</a></button>
+	  				<button class="span buttonnav"><a href="<?=site_url("client/index")?>" class="hypertexte" id="contact">TDB</a></button>
 	  			</div>
 
 	  		</div>
@@ -81,22 +83,110 @@
 	  		<div class="mdl-cell mdl-cell--2-col sansmargin"></div>
 	  		<div class="mdl-cell mdl-cell--8-col sansmargin">
 	  			
-	  			<div class="bodyliste">
+	  			<div class="bodydetails">
 
-	  				<div class="sans margin h2">
-	  					<h2>Tableau de bord commercial</h2>
-	  				</div>	
-	  				<br>
-					<div id="tdb">
-						A partir de ce tableau de bord, vous pouvez gérer avec les boutons ci-dessus les :<br><br>
-						→ Fournisseurs<br>
-						→ Rubriques<br>
-						→ Sous Rubriques<br>
-						→ Produits<br>
-						<br><br><br><br>
+	  		<table class="mdl-shadow--2dp  mdl-js-data-table tableajout">
+	  				<form method="post" action="<?=site_url("system/script_modifier")?>" id="form4">
+
+	  				<!-- cacher l'ID appelé -->
+        			<input type="hidden" name="RefArticle" value="<?=$ligne->RefArticle?>">
+					<tr>
 						
-					</div>
-	  		
+						<td class="mdl-data-table__cell--non-numeric">
+							<!-- <br><img src="<?= base_url($ligne->PhotoArticle) ?>" class="picdetails"/> -->
+							<input type="texte" name="PhotoArticle" class="inputajout" placeholder="Photo de l'article" value="<?= ($ligne->PhotoArticle) ?>"/>
+						</td>
+					</tr>
+	
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="texte" name="AppelationArticle" class="inputajout" placeholder="Appelation de l'article" value="<?=$ligne->AppelationArticle?>"/>
+							<!-- <div class="label"><?=$ligne->AppelationArticle?></div><br> -->
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<textarea type="texte" name="CaracteristiqueArticle" placeholder="Caractéristiques de l'article" class="textarea-ajout" id="message" value="<?= $ligne->CaracteristiqueArticle ?>"></textarea>
+							<!-- <div class="label"><?= $ligne->CaracteristiqueArticle ?></div><br> -->
+						</td>
+					</tr>	
+
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="texte" name="PUHTArticle" class="inputajout" placeholder="Prix de vente hors taxe" value="<?= $ligne->PUHTArticle ?>"/>
+							<!-- <div class="label"><?= $ligne->PUHTArticle ?> €</div><br> -->
+						</td>
+					</tr>	
+
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="texte" name="QteStockArticle" class="inputajout" placeholder="Quantité en stock" value="<?=$ligne->QteStockArticle?>"/>
+							<!-- <div class="label"><?=$ligne->QteStockArticle?></div><br> -->
+						</td>
+					</tr>	
+
+					<tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<select name="IdSousRubrique" class="selectajout" id="souscategorie">
+								<option value="<?=$ligne->IdSousRubrique?>"><?=$ligne->IdSousRubrique?></option>
+					  			<option value="Choisissez la sous-rubrique">Choisissez la sous-rubrique</option>
+					  			<option value="" disabled></option>
+								<option value="all">TOUS LES PRODUITS</option>
+					  			<option value="" disabled></option>
+					  			<option value="" >1100 Instruments à cordes</option>
+					  			<option value="1110"> → 1110 Cordes pincées</option>
+					  			<option value="1120"> → 1120 Cordes frappées</option>
+					  			<option value="1130"> → 1130 Cordes frottées</option>
+					  			<option value="" disabled></option>
+					  			<option value="">1200 Instruments à vent</option>
+					  			<option value="1210"> → 1210 Vent biseau</option>
+					  			<option value="1220"> → 1220 Vent anche</option>
+					  			<option value="1230"> → 1230 Vent cuivres</option>
+					  			<option value="" disabled></option>
+								<option value="" >1300 Instruments à percussions</option>
+								<option value="1310"> → 1310 Percussions clavier</option>
+								<option value="1320"> → 1320 Percussions peaux</option>
+								<option value="" disabled></option>
+								<option value="" >2000 Accessoires</option>
+								<option value="2010"> → 2010 Accessoires instruments à cordes</option>
+								<option value="2020"> → 2020 Accessoires instruments à vent</option>
+								<option value="2030"> → 2030 Accessoires instruments à percussions
+								</option>
+								
+					  		</select>
+							<!-- <div class="label"><?=$ligne->IdSousRubrique?></div><br> -->
+						</td>
+					</tr>
+
+					<tr>
+						<td class="mdl-data-table__cell--non-numeric">
+							<select name="IDFournisseur" class="selectajout" id="fournisseur">
+								<option value="<?=$ligne->IDFournisseur?>"><?=$ligne->IDFournisseur?></option>
+					  			<option value="Choisissez le fournisseur">Choisissez le fournisseur</option>
+					  			<option value="123">123 Guitare&Co</option>
+					  			<option value="234">234 Piano&Co</option>
+								<option value="345">345 Cuivre&Co</option>
+					  		</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="submit" value="Valider" class="buttonadd" id="submitmodif" />
+			  				<br><br>
+						</td>
+					</tr>
+					</form>	
+
+					<div class="retourcentrage"><a href="<?=site_url("System/comliste")?>" class="hypertexte">Retour à la liste</a></div>
+						
+			</table>
+
 	  				
 
 	  			</div>
@@ -198,7 +288,7 @@
 						  		<br><br>
 						  		<br><br>
 						  		<br><br>
-						  		<a href="<?=site_url("System/commercial")?>" class="hypertextefooter"><div class="private"><i class="material-icons">https</i>Accès Commercial</div></a>
+						  		<a href="<?=site_url("client/index")?>" class="hypertextefooter"><div class="private"><i class="material-icons"></i>Accès Commercial</div></a>
 						  		<br><br>
 						  		<br><br>
 						  	</div>

@@ -1,0 +1,68 @@
+.login
+{
+	width: 324px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.labellogin
+{
+	
+	font-size: 12px;
+	color: #29ABE2;
+}
+
+.inputconnect
+{
+	padding-left: 20px;
+	width: 320px;
+	height: 40px;
+	color: white;
+	background-color: rgba(56, 56, 56, 0.6);
+	border: solid 1px;
+	border-color: rgba(56, 56, 56, 0.6);
+	border-radius: 10px;
+	outline: none;
+	overflow: hidden;
+}
+.inputconnect::-webkit-input-placeholder 
+{ /* Chrome/Opera/Safari */
+	color: #29ABE2;
+	font-family: "Helvetica", sans-serif;
+}
+.buttonconnect
+{
+	width: 160px;
+	height: 40px;
+	background-color: rgba(56, 56, 56, 0.6);
+	border: solid 1px;
+	border-color: rgba(56, 56, 56, 0.6);
+	border-radius: 10px;
+	outline: none;
+	overflow: hidden;
+	color: #29ABE2;
+	font-family: "Helvetica", sans-serif;
+	cursor: pointer;
+}
+
+.buttondisconnect
+{
+	width: 160px;
+	height: 40px;
+	background-color: rgba(56, 56, 56, 0.6);
+	border: solid 1px;
+	border-color: rgba(56, 56, 56, 0.6);
+	border-radius: 10px;
+	outline: none;
+	overflow: hidden;
+	color: #29ABE2;
+	font-family: "Helvetica", sans-serif;
+	cursor: pointer;
+}
+
+.disconnect
+{
+	width: 162px; 
+	margin-left: auto;
+	margin-right: auto;
+}

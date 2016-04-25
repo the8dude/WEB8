@@ -224,7 +224,7 @@
 						  		<br><br>
 						  		<br><br>
 						  		<br><br>
-						  		<a href="<?=site_url("System/commercial")?>" class="hypertextefooter"><div class="private"><i class="material-icons">https</i>Accès Commercial</div></a>
+						  		<a href="<?=site_url("client/index")?>" class="hypertextefooter"><div class="private"><i class="material-icons">https</i>Accès Commercial</div></a>
 						  		<br><br>
 						  		<br><br>
 						  	</div>

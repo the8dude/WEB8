@@ -38,12 +38,6 @@ class System extends CI_Controller
         }
     }
 
-    public function commercial()
-    {
-        $this->load->helper('url');
-        $this->load->view('commercial');
-    }
-
     public function comliste()
     {
         $this->load->database();
@@ -78,11 +72,35 @@ class System extends CI_Controller
         $this->load->view('comdetails', $model);
     }
 
+    public function modifier($id)
+    {
+            $this->load->database();
+            $this->load->helper('url');
+
+            $liste = $this->db->query("select * from article where RefArticle= ?", array($id));
+            $model["ligne"] = $liste->row(); // premiÃ¨re ligne du rÃ©sultat
+            $this->load->view('modifier', $model);
+    }
+
+    public function script_modifier()
+        {
+            $data = $this->input->post();
+            $id = $this->input->post("RefArticle");
+
+            $this->load->database();
+            $str = $this->db->update_string('article', $data, "RefArticle=" . $id);
+            $this->db->query($str);
+
+            $this->load->helper('url');
+            redirect(site_url("system/comliste"));
+        }
+
+
     public function script_supprimer($id)
     {
             $this->load->database();
 
-            $this->db->query("delete from liens where RefArticle= ?", array($id));
+            $this->db->query("delete from article where RefArticle= ?", array($id));
             
             $this->load->helper('url');
             redirect(site_url("system/comliste"));

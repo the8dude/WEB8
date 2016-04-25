@@ -61,7 +61,7 @@
 	  				<button class="span buttonnav">Rubriques</button>
 	  				<button class="span buttonnav">Sous Rubriques</button>
 	  				<button class="span buttonnav"><a href="<?=site_url("System/comliste")?>" class="hypertexte" id="accueil">Produits</a></button>
-	  				<button class="span buttonnav"><a href="<?=site_url("System/commercial")?>" class="hypertexte" id="contact">TDB</a></button>
+	  				<button class="span buttonnav"><a href="<?=site_url("client/index")?>" class="hypertexte" id="contact">TDB</a></button>
 	  			</div>
 
 	  		</div>
@@ -82,109 +82,112 @@
 	  		<div class="mdl-cell mdl-cell--8-col sansmargin">
 	  			
 	  			<div class="bodyliste">
-	  		<table>
-	  			<tr>
-	  				<div id="centrage">
-	  					<td>
-			  				<form>
-					  		<select name="choix" class="select" id="choix">
-					  			<option value="Choisissez">Choisissez</option>
-					  			<option value="" disabled></option>
-								<option value="all">TOUS LES PRODUITS</option>
-					  			<option value="" disabled></option>
-					  			<option value="" >Instruments à cordes</option>
-					  			<option value="1110"> → Cordes pincées</option>
-					  			<option value="1120"> → Cordes frappées</option>
-					  			<option value="1130"> → Cordes frottées</option>
-					  			<option value="" disabled></option>
-					  			<option value="">Instruments à vent</option>
-					  			<option value="1210"> → Vent biseau</option>
-					  			<option value="1220"> → Vent anche</option>
-					  			<option value="1230"> → Vent cuivres</option>
-					  			<option value="" disabled></option>
-								<option value="" >Instruments à percussions</option>
-								<option value="1310"> → Percussions clavier</option>
-								<option value="1320"> → Percussions peaux</option>
-								<option value="" disabled></option>
-								<option value="" >Accessoires</option>
-								<option value="2010"> → Accessoires instruments à cordes</option>
-								<option value="2020"> → Accessoires instruments à vent</option>
-								<option value="2030"> → Accessoires instruments à percussions</option>
+			  		<table>
+			  			<tr>
+			  				<div id="centrage">
+			  					<td>
+
+			  						<form>
+							  		<select name="choix" class="select" id="choix">
+							  			<option value="Choisissez">Choisissez</option>
+							  			<option value="" disabled></option>
+										<option value="all">TOUS LES PRODUITS</option>
+							  			<option value="" disabled></option>
+							  			<option value="" >Instruments à cordes</option>
+							  			<option value="1110"> → Cordes pincées</option>
+							  			<option value="1120"> → Cordes frappées</option>
+							  			<option value="1130"> → Cordes frottées</option>
+							  			<option value="" disabled></option>
+							  			<option value="">Instruments à vent</option>
+							  			<option value="1210"> → Vent biseau</option>
+							  			<option value="1220"> → Vent anche</option>
+							  			<option value="1230"> → Vent cuivres</option>
+							  			<option value="" disabled></option>
+										<option value="" >Instruments à percussions</option>
+										<option value="1310"> → Percussions clavier</option>
+										<option value="1320"> → Percussions peaux</option>
+										<option value="" disabled></option>
+										<option value="" >Accessoires</option>
+										<option value="2010"> → Accessoires instruments à cordes</option>
+										<option value="2020"> → Accessoires instruments à vent</option>
+										<option value="2030"> → Accessoires instruments à percussions</option>
+									</select>
+							
+									<input type="submit" class="submit" value="CHERCHER" />
+							  		</form>
+
+							  		<a href="<?= site_url("system/ajout") ?>" class="hypertexte">
+										<button class="mdl-button mdl-js-button mdl-button--raised btnajout">
+											AJOUTER
+										</button>							
+									</a>
+
+								</td>
 								
-					  		</select>
-					  		<input type="submit" class="submit" value="CHERCHER"/>
-					  		</form>
-						</td>
-						<td>
-					  			<a href="<?= site_url("system/ajout") ?>" class="hypertexte">
-									<button class="mdl-button mdl-js-button mdl-button--raised btnajout">
-										AJOUTER
-									</button>							
-								</a>
-						</td>
-					</div>
+							</div>
+					  	</tr>
+					</table>
 
-			  	</tr>
-			</table>
+				<div>
+					<table class="  mdl-shadow--2dp  mdl-js-data-table tableliste">
+						<thead>
+						<tr>
+							<th class="mdl-data-table__cell--non-numeric titre" id="photo">
+								<br>Photo<br><br> 
+							</th>
+							<th class="mdl-data-table__cell--non-numeric titre">
+								<br>Produit<br><br>
+							</th>
+							<th class="mdl-data-table__cell--non-numeric titre">
+								<br>PU TTC<br><br>
+							</th>
+							<th class="mdl-data-table__cell--non-numeric titre2">
+								<br>Stock<br><br>
+							</th>
 
-	  		<table class="  mdl-shadow--2dp  mdl-js-data-table tableliste">
-				<thead>
-				<tr>
-					<th class="mdl-data-table__cell--non-numeric titre" id="photo">
-						Photo 
-					</th>
-					<th class="mdl-data-table__cell--non-numeric titre">
-						Produit
-					</th>
-					<th class="mdl-data-table__cell--non-numeric titre">
-						PU TTC
-					</th>
-					<th class="mdl-data-table__cell--non-numeric titre">
-						Stock
-					</th>
+							<th>
+								
+							</th>
+						</tr>
+						</thead>
 
-					<th>
+				  		<tbody>
+				  		<?php foreach ($liste as $ligne): ?>
+							<tr>
+								<!-- Photo -->
+								<td class="mdl-data-table__cell--non-numeric">
+									<img src="<?= base_url($ligne->PhotoArticle) ?>" class="picsize"/>
+								</td>
+								<!-- AppelationArticle -->
+								<td class="mdl-data-table__cell--non-numeric texte">
+									<?= $ligne->AppelationArticle ?>
+								</td>
+								<!-- PUHT -->
+								<td class="mdl-data-table__cell--non-numeric texte">
+									<?= $ligne->PUHTArticle*1.20 ?> €
+								</td>
+								<!-- Quantité -->
+								<td class="stock texte">
+									<?= $ligne->QteStockArticle ?>
+								</td>
+								<!-- Bouton de détails -->
+								<td class="alignbtn">								
+									<a href="<?= site_url("system/comdetails/".$ligne->RefArticle) ?>">								
+										<button class="mdl-button mdl-js-button mdl-button--raised btn">
+										DETAILS	  							
+										</button>
+									</a>
+								</td>
+
+							</tr>
+							
+						<?php endforeach; ?>
+
+						</tbody>
 						
-					</th>
-				</tr>
-				</thead>
+					</table>
 
-		  		<tbody>
-				<?php foreach ($liste as $ligne): ?>
-					<tr>
-						<!-- Photo -->
-						<td class="mdl-data-table__cell--non-numeric">
-							<img src="<?= base_url($ligne->PhotoArticle) ?>" class="picsize"/>
-						</td>
-						<!-- AppelationArticle -->
-						<td class="mdl-data-table__cell--non-numeric texte">
-							<?= $ligne->AppelationArticle ?>
-						</td>
-						<!-- PUHT -->
-						<td class="mdl-data-table__cell--non-numeric texte">
-							<?= $ligne->PUHTArticle*1.20 ?> €
-						</td>
-						<!-- Quantité -->
-						<td class="stock texte">
-							<?= $ligne->QteStockArticle ?>
-						</td>
-						<!-- Bouton de détails -->
-						<td class="alignbtn">								
-							<a href="<?= site_url("system/comdetails/".$ligne->RefArticle) ?>">								
-								<button class="mdl-button mdl-js-button mdl-button--raised btn">
-								DETAILS	  							
-								</button>
-							</a>
-
-						</td>
-
-					</tr>
-					
-				<?php endforeach; ?>
-
-				</tbody>
-			</table>
-	  				
+	  			</div>	
 
 	  			</div>
 
@@ -285,7 +288,7 @@
 						  		<br><br>
 						  		<br><br>
 						  		<br><br>
-						  		<a href="<?=site_url("System/commercial")?>" class="hypertextefooter"><div class="private"><i class="material-icons">https</i>Accès Commercial</div></a>
+						  		<a href="<?=site_url("client/index")?>" class="hypertextefooter"><div class="private"><i class="material-icons">https</i>Accès Commercial</div></a>
 						  		<br><br>
 						  		<br><br>
 						  	</div>

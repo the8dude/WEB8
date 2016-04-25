@@ -1,7 +1,9 @@
 /*CSS ACCUEIL TDB*/
 #tdb
 {
-	margin-left: 200px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 	color: white;
 	font-size: 16px;
 	font-family: "Helvetica", sans-serif;
@@ -20,12 +22,14 @@
 
 #centrage
 {
-	margin-left: auto;
+	margin-left: 10px;
 
 }
 .select
 {
-	margin: 20px;
+	margin-top: 8px;
+	margin-left: 29px;
+	margin-bottom: 4px;
 	padding-left: 20px;
 	width: 320px;
 	height: 40px;
@@ -40,8 +44,7 @@
 
 .submit
 {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 29px;
 	background-color: black;
 	border-radius: 10px;
 	border: solid 2px;
@@ -50,7 +53,7 @@
 	color: #29ABE2;
 	overflow: hidden;
 	outline: none;
-	width: 120px;
+	width: 320px;
 	height: 40px;
 	
 }
@@ -61,6 +64,8 @@
 	height: 60px;
 	opacity: 0.8;
     border-radius: 10px;
+    margin-left: 10px;
+    overflow: hidden;
 }
 
 .tableliste
@@ -90,13 +95,13 @@
 
 #photo
 {
-	padding-left: 8px;
+	padding-left: 18px;
 }
 
 .stock
 {
 	text-align: right;
-	padding-right: 60px;
+	padding-right: 40px;
 }
 
 .titre
@@ -104,6 +109,14 @@
 	color: #29ABE2;
 	font-size: 16px;
 	font-family: "Helvetica", sans-serif;
+}
+
+.titre2
+{
+	color: #29ABE2;
+	font-size: 16px;
+	font-family: "Helvetica", sans-serif;
+	width: 100px;
 }
 
 .texte
@@ -114,8 +127,8 @@
 
 .btnajout
 {
-	margin-left: 20px;
-	margin-bottom: 16px;
+	margin-left: 29px;
+	margin-bottom: 8px;
 	background-color: black;
 	border-radius: 10px;
 	border: solid 2px;
@@ -124,6 +137,7 @@
 	color: #29ABE2;
 	overflow: hidden;
 	padding-bottom: 36px;
-	width: 120px;
+	width: 320px;
 }
+
 

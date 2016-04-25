@@ -11,7 +11,7 @@
 	<!-- CSS Perso -->
 	<link rel="stylesheet" href="<?=base_url("css/index.css")?>" />
 	<link rel="stylesheet" href="<?=base_url("css/comliste.css")?>" />
-	<link rel="stylesheet" href="<?=base_url("css/comdetails.css")?>" />
+	<link rel="stylesheet" href="<?=base_url("css/login.css")?>" />
 	<!-- JS jQuery -->
 	<script src="<?=base_url("jscript/jquery.js")?>"></script>
 	
@@ -58,11 +58,11 @@
 
 	  			<div class="header3">
 	  				<button class="span buttonnav"><a href="<?=site_url("System/index")?>" class="hypertexte" id="accueil">Accueil</a></button>
-	  				<button class="span buttonnav">Fournisseurs</button>
-	  				<button class="span buttonnav">Rubriques</button>
-	  				<button class="span buttonnav">Sous Rubriques</button>
-	  				<button class="span buttonnav"><a href="<?=site_url("System/comliste")?>" class="hypertexte" id="accueil">Produits</a></button>
-	  				<button class="span buttonnav"><a href="<?=site_url("client/index")?>" class="hypertexte" id="contact">TDB</a></button>
+	  				<button class="span buttonnav">Percussions</button>
+	  				<button class="span buttonnav">Cordes</button>
+	  				<button class="span buttonnav">Vent</button>	  				
+	  				<button class="span buttonnav">Accessoires</button>		
+	  				<button class="span buttonnav"><a href="<?=site_url("System/contact")?>" class="hypertexte" id="contact">Contact</a></button>
 	  			</div>
 
 	  		</div>
@@ -82,118 +82,23 @@
 	  		<div class="mdl-cell mdl-cell--2-col sansmargin"></div>
 	  		<div class="mdl-cell mdl-cell--8-col sansmargin">
 	  			
-	  			<div class="bodydetails">
+	  			<div class="bodyliste">
+					
+					<div class="login">
+		  				<form method="post" id="form2">
+		  						<br><br>
+								<input type="texte" name="login" placeholder="Votre login*" class="inputconnect" id="login" />
+								<br><br>
 
-	  			
-	  		<table class="mdl-shadow--2dp  mdl-js-data-table tabledetails">
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Photo Produit</div>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<br><img src="<?= base_url($ligne->PhotoArticle) ?>" class="picdetails"/>
-						</td>
-					</tr>
+								<input type="password" name="password" placeholder="Votre mot de passe*" class="inputconnect" id="password"/>
+								<br><br>							
 
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<br><div class="texte2">Référence Produit</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<br><div class="label"><?=$ligne->RefArticle?></div><br>
-						</td>
-					</tr>				
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Produit</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?=$ligne->AppelationArticle?></div><br>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Caractéristiques</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?= $ligne->CaracteristiqueArticle ?></div><br>
-						</td>
-					</tr>	
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">PV TTC</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?= $ligne->PUHTArticle*1.20 ?> €</div><br>
-						</td>
-					</tr>	
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Quantité en stock</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?=$ligne->QteStockArticle?></div><br>
-						</td>
-					</tr>	
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Sous Rubrique</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?=$ligne->IdSousRubrique?></div><br>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="texte2">Fournisseur</div><br>
-						</td>
-						<td class="mdl-data-table__cell--non-numeric">
-							<div class="label"><?=$ligne->IDFournisseur?></div><br>
-						</td>
-					</tr>
-
-					<tr>						
-						<td>							
-						</td>
-
-						<td class="mdl-data-table__cell--non-numeric">
-							
-							<a href="<?= site_url("system/modifier/".$ligne->RefArticle) ?>" class="hypertexte">
-								<button class="mdl-button mdl-js-button mdl-button--raised btn2">
-									MODIFIER 
-								</button>							
-							</a>
-								
-
-								
-							<a href="<?= site_url("system/script_supprimer/".$ligne->RefArticle) ?>" class="hypertexte">
-								<button class="mdl-button mdl-js-button mdl-button--raised btn2">
-									SUPPRIMER
-								</button>
-							</a>
-								
-						</td>
-						
-					</tr>	
-					<tr>
-						<td>							
-						</td>
-						<td>
-							<br>
-							<div class="retourcentrage"><a href="<?=site_url("System/comliste")?>" class="hypertexte">Retour à la liste</a></div>
-							<br>							
-						</td>
-						
-					</tr>	
-
-			</table>
-	  				
+								<div class="labellogin">*Champs obligatoires</div><br>
+								<input type="submit" name="envoyer" value="Envoyer" class="buttonconnect" id="submit" />
+				  				<input type="reset" name="effacer" value="Effacer" class="buttonconnect" id="reset" />
+				  				<br><br>
+						</form>
+	  				</div>
 
 	  			</div>
 
