@@ -114,7 +114,6 @@
 							    </li>
 					    	</ul>
 						</div>
-
 	  			</div>
 
 	  			<!-- CODE DU BODY PETIT CAROUSEL -->
@@ -388,7 +387,7 @@
 
 
 <script defer src="<?=base_url("woothemes/jquery.flexslider.js")?>"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
 
 <script>
 

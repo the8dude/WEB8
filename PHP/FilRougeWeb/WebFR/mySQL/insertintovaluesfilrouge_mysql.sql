@@ -70,10 +70,10 @@ insert into sousrubrique (IdSousRubrique, NomSousRubrique, IdRubrique)
 values (1110, 'Instruments à cordes pincées', 1100);
 
 insert into sousrubrique (IdSousRubrique, NomSousRubrique, IdRubrique)
-values (1120, 'Instruments à cordes ppées', 1100);
+values (1120, 'Instruments à cordes frappées', 1100);
 
 insert into sousrubrique (IdSousRubrique, NomSousRubrique, IdRubrique)
-values (1130, 'Instruments à cordes ttées', 1100);
+values (1130, 'Instruments à cordes frottées', 1100);
 
 
 insert into sousrubrique (IdSousRubrique, NomSousRubrique, IdRubrique)
