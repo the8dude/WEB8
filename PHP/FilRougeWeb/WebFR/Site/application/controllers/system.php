@@ -116,12 +116,27 @@ class System extends CI_Controller
         {
             $data = $this->input->post();
 
+            $this->load->helper('url');
+
+            $config['upload_path'] = './image/produits/';
+            $config['allowed_types'] = 'gif|jpg|png';
+            // $config['max_size'] = '100';
+            // $config['max_width']  = '1024';
+            // $config['max_height']  = '768';
+
+            $this->load->library('upload', $config);
+            if ($this->upload->do_upload("test")) {
+                $data["PhotoArticle"] =  "image/produits/" . $this->upload->data()["file_name"];
+            }
+            // $this->load->view('ajout');
+
             $this->load->database();
+            //var_dump ($this->upload->data());
             $str = $this->db->insert_string('article', $data);
             $this->db->query($str);
 
-            $this->load->helper('url');
             redirect(site_url("system/comliste"));
+
         }
 
 }

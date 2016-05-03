@@ -50,6 +50,20 @@
   font-family: "Helvetica", sans-serif;
 }
 
+#button1
+{
+  background-color: rgba(1,1,1,0.9);
+  border: solid 3px;
+  border-radius: 15px;
+  border-color: #29ABE2;
+  outline: none;
+  overflow: hidden;
+  font-family: "Helvetica", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #29ABE2;
+}
+
 #news
 {
   text-align: center;
@@ -194,4 +208,12 @@ html .ui-panel-page-container-a {
   border-color:     #29ABE2 /*{a-body-border}*/;
   color:          #29ABE2 /*{a-body-color}*/;
   /*text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/   #f3f3f3 /*{a-body-shadow-color}*/;*/
+}
+
+#page4 #listeProduits2 img
+{
+  margin-top: 7px;
+  margin-left: 7px;
+  border-radius: 16px;
+  height: 82%;
 }

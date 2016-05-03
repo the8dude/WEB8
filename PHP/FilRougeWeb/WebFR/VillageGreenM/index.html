@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://dl.bienvu.net/dude/VillageGreenM/woothemes/flexslider.css" />
+	<link rel="stylesheet" href="http://dl.bienvu.net/dude/VillageGreenM/css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="http://dl.bienvu.net/dude/VillageGreenM/css/jquery.mobile.icons-1.4.5.css">
+	<link rel="stylesheet" href="http://dl.bienvu.net/dude/VillageGreenM/css/index.css">
+</head>
+
+<body>
+
+	<!-- PAGE MOBILE N°1 -->
+	<!-- PAGE MOBILE N°1 -->
+	<div data-role="page" id="page1">
+
+		<!------------------------fenêtre popover de la page 1-->
+            <div data-role="popup" id="popup" data-overlay-theme="a" data-theme="c" data-dismissible="false" style="max-width:300px;" class="ui-corner-all popup" data-history="false">
+                <div data-role="header" class="ui-header ui-bar-c">
+                    <h1>Bienvenue !</h1>
+                </div>
+                <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+                    <p id="textsite"><br>Bienvenue sur le site mobile de <br> Village Green.
+                        <br/>
+                        <br/>Pour continuer sur la version mobile cliquer sur la croix, sinon cliquer sur la maison pour vous rendre sur la version classique</p>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a" style="width: 85%"><a href="http://dl.bienvu.net/dude/VillageGreen/" data-role="button" data-theme="c" data-icon="home"></a>
+                        </div>
+                        <div class="ui-block-b" style="width: 15%;"><a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="back">Fermer</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------- fin de la fenêtre popover-->
+
+		<div data-role="header">
+			<img src="image/logomobile.png" class="logo">
+		</div>
+
+
+
+		<div data-role="content" id="bodypage">
+			<div >
+				<input type="text" name="search-1" class="searchbar searchinput" id="textBox1" placeholder="Trouver un produit...">			
+				
+						
+				<div class="body1">
+						<br>
+							<div id="news">
+								Nouveautés
+							</div>
+	  					<br>
+	  					<div class="flexslider carousel">
+						  	<ul class="slides">
+							    <li>
+							      <img src="image/gibson.jpg" width="85%" class="img"/>
+							      <p class="flex-caption">→ Guitare Electrique Gibson</p>
+							    </li>
+							    <li>
+							      <img src="image/fender.jpg" width="85%" class="img"/>
+							      <p class="flex-caption">→ Guitare Electrique Fender</p>
+							    </li>
+					    	</ul>
+						</div>
+	  			</div>
+
+	  			
+
+			</div>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div class="body2">
+						
+						  	<div class="social">
+						  	
+						  		<table>
+						  			<tr>
+						  				<td>
+								  		<img src="image/Icone/social1.png" width="20px" height="20px"/>	Google+
+								  		</td>
+								  		<td>
+								  		<img src="image/Icone/social2.png" width="20px" height="20px"/>	Facebook
+								  		</td>
+								  		<td>	
+								  		<img src="image/Icone/social3.png" width="20px" height="20px"/>	Instagram
+								  		</td>
+								  		<td>
+								  		<img src="image/Icone/social4.png" width="20px" height="20px"/>	Twitter
+								  		</td>
+								  	</tr>
+						  		</table>
+						  		
+						  	</div>
+					  	
+	  			</div>
+		</div>
+	</div>
+
+	<!-- PAGE MOBILE N°2 -->
+	<!-- PAGE MOBILE N°2 -->
+	<div data-role="page" id="page2">
+		<div data-role="header">
+			<div data-role="header">
+			<img src="image/logomobile.png" class="logo">
+			</div>
+			<a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext btnsize home" data-direction="reverse" data-transition="slide">Home</a>
+			<a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext btnsize" id="back1" data-direction="reverse" data-transition="slide">Back</a>
+		</div>
+
+
+		<div data-role="content" id="bodypage">
+			<div class="body1">
+				<div data-iscroll>
+					<ul data-role="listview" data-inset="true" id="listeProduits">
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div>
+			<div data-role="footer" data-position="fixed">
+				<div class="body2">
+						
+						  	<div class="social">
+						  	
+						  		<table>
+						  			<tr>
+						  				<td>
+								  		<img src="image/Icone/social1.png" width="20px" height="20px"/>	Google+
+								  		</td>
+								  		<td>
+								  		<img src="image/Icone/social2.png" width="20px" height="20px"/>	Facebook
+								  		</td>
+								  		<td>	
+								  		<img src="image/Icone/social3.png" width="20px" height="20px"/>	Instagram
+								  		</td>
+								  		<td>
+								  		<img src="image/Icone/social4.png" width="20px" height="20px"/>	Twitter
+								  		</td>
+								  	</tr>
+						  		</table>
+						  		
+						  	</div>
+					  	
+	  			</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PAGE MOBILE N°3 -->
+	<!-- PAGE MOBILE N°3 -->
+	<div data-role="page" id="page3">
+		<div data-role="header">
+			<img src="image/logomobile.png" class="logo">
+			<a href="#page1" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext btnsize home" data-direction="reverse" data-transition="slide">Home</a>
+			<a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext btnsize" id="back2" data-direction="reverse" data-transition="slide">Back</a>
+		</div>
+
+
+		<div data-role="content" id="bodypage">
+			<div class="body3">
+				<div data-iscroll>
+					<ul data-role="listview" data-inset="true" id="detailsArticle" class="ui-listview">
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div data-role="footer" data-position="fixed">
+				<div class="body2">
+						
+						  	<div class="social">
+						  	
+						  		<table>
+						  			<tr>
+						  				<td>
+								  		<img src="image/Icone/social1.png" width="20px" height="20px"/>	Google+
+								  		</td>
+								  		<td>
+								  		<img src="image/Icone/social2.png" width="20px" height="20px"/>	Facebook
+								  		</td>
+								  		<td>	
+								  		<img src="image/Icone/social3.png" width="20px" height="20px"/>	Instagram
+								  		</td>
+								  		<td>
+								  		<img src="image/Icone/social4.png" width="20px" height="20px"/>	Twitter
+								  		</td>
+								  	</tr>
+						  		</table>
+						  		
+						  	</div>
+					  	
+	  			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
+
+<script src="http://dl.bienvu.net/dude/VillageGreenM/js/jquery.js"></script>
+<script src="http://dl.bienvu.net/dude/VillageGreenM/js/jquery.mobile-1.4.5.js"></script>	
+<script src="http://dl.bienvu.net/dude/VillageGreenM/js/index.js"></script>
+
+
+<script defer src="http://dl.bienvu.net/dude/VillageGreenM/woothemes/jquery.flexslider.js"></script>
+
+<script>
+
+
+$(document).ready(function() {
+
+	// Fonction Grand Carousel
+		$(window).load(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide"
+		  });
+		});	
+
+		$('.center').click({
+		  centerMode: true,
+		  centerPadding: '60px',
+		  slidesToShow: 3,
+		  responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '20px',
+		        slidesToShow: 3
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '20px',
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+		});
+});
+</script>
+

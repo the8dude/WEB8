@@ -86,20 +86,31 @@
 	  			<div class="bodydetails">
 
 	  		<table class="mdl-shadow--2dp  mdl-js-data-table tableajout">
-	  				<form method="post" action="<?=site_url("system/script_ajout")?>" id="form3">
-					<tr>
-						
-						<td class="mdl-data-table__cell--non-numeric">
-							<!-- <br><img src="<?= base_url($ligne->PhotoArticle) ?>" class="picdetails"/> -->
-							<input type="texte" name="PhotoArticle" class="inputajout" placeholder="Photo de l'article"/>
+
+	  				<form action="<?=site_url("system/script_ajout")?>" enctype="multipart/form-data" method="post" accept-charset="utf-8" id="form3">
+
+	  				<tr>
+	  					<td>
+							<input type="file"  name="test" id="formajoutfile"/>
+							<!-- <input type="submit" value="Télécharger la photo" id="formajoutbtn"/> -->
+
 						</td>
 					</tr>
+					<!-- </form> -->
+
+					<!-- <tr>
+						
+						<td class="mdl-data-table__cell--non-numeric">
+							<input type="texte" name="PhotoArticle" class="inputajout" placeholder="Photo -> image/produits/nomimage.(jpg/png/gif)"/>
+
+
+						</td>
+					</tr> -->
 	
 					<tr>
 						
 						<td class="mdl-data-table__cell--non-numeric">
 							<input type="texte" name="AppelationArticle" class="inputajout" placeholder="Appelation de l'article"/>
-							<!-- <div class="label"><?=$ligne->AppelationArticle?></div><br> -->
 						</td>
 					</tr>
 
@@ -107,7 +118,6 @@
 						
 						<td class="mdl-data-table__cell--non-numeric">
 							<textarea type="texte" name="CaracteristiqueArticle" placeholder="Caractéristiques de l'article" class="textarea-ajout" id="message"></textarea>
-							<!-- <div class="label"><?= $ligne->CaracteristiqueArticle ?></div><br> -->
 						</td>
 					</tr>	
 
@@ -115,7 +125,6 @@
 						
 						<td class="mdl-data-table__cell--non-numeric">
 							<input type="texte" name="PUHTArticle" class="inputajout" placeholder="Prix de vente hors taxe"/>
-							<!-- <div class="label"><?= $ligne->PUHTArticle ?> €</div><br> -->
 						</td>
 					</tr>	
 
@@ -123,7 +132,6 @@
 						
 						<td class="mdl-data-table__cell--non-numeric">
 							<input type="texte" name="QteStockArticle" class="inputajout" placeholder="Quantité en stock"/>
-							<!-- <div class="label"><?=$ligne->QteStockArticle?></div><br> -->
 						</td>
 					</tr>	
 
@@ -156,7 +164,6 @@
 								
 								
 					  		</select>
-							<!-- <div class="label"><?=$ligne->IdSousRubrique?></div><br> -->
 						</td>
 					</tr>
 

@@ -401,7 +401,7 @@ $(document).ready(function() {
 		  });
 		});	
 
-		$('.center').slick({
+		$('.center').click({
 		  centerMode: true,
 		  centerPadding: '60px',
 		  slidesToShow: 3,

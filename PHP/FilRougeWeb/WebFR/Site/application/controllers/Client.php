@@ -26,4 +26,6 @@ class Client extends CI_Controller {
 		//else 
 			//redirect ("utilisateur/login");
 	}
+
+	
 }
